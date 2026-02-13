@@ -54,87 +54,49 @@
 </head>
 <body class="min-h-screen font-sans">
 <nav class="border-b border-white/10 sticky top-0 bg-deep-green/80 backdrop-blur-md z-50">
-<div class="max-w-7xl mx-auto px-6 py-20 relative z-10" data-aos="fade-up">center justify-between">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
 <a href="index.html" class="flex items-center gap-4">
 <img alt="Griom Logo" class="h-10 w-auto object-contain" src="images/logo-dark.jpg"/>
 </a>
-<div class="hidden md:flex items-center space-x-8">
-            <a
-              class="text-sm font-semibold hover:text-primary transition-colors"
-              href="index.html"
-              >Home</a
-            >
-            <a
-              class="text-sm font-semibold hover:text-primary transition-colors"
-              href="services.html"
-              >Services</a
-            >
-            <a
-              class="text-sm font-semibold hover:text-primary transition-colors"
-              href="about.html"
-              >About</a
-            >
-            <div class="relative group">
-              <button
-                class="text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1"
-              >
-                Portfolio
-                <span class="material-symbols-outlined text-sm">expand_more</span>
-              </button>
-              <div
-                class="absolute top-full left-0 mt-2 w-56<div class="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10" data-aos="fade-left" data-aos-delay="200"> rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden"
-              >
-                <div class="py-2">
-                  <a
-                    href="portfolio.html"
-                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
-                    >Featured Works</a
-                  >
-                  <a
-                    href="authors.html"
-                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
-                    >Authors</a
-                  >
-                  <a
-                    href="author-profile.html"
-                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
-                    >Author Profile</a
-                  >
-                  <a
-                    href="books.html"
-                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
-                    >Books Catalog</a
-                  >
-                  <a
-                    href="events.html"
-                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
-                    >Events</a
-                  >
-                  <a
-                    href="licensing.html"
-                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
-                    >Licensing</a
-                  >
-                </div>
+        <div class="hidden md:flex items-center space-x-8 ml-auto">
+          <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="text-sm font-semibold hover:text-primary transition-colors" href="services.html">Services</a>
+          <a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About</a>
+          <div class="relative group">
+            <button class="text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1">
+              Portfolio
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </button>
+            <div class="absolute top-full right-0 mt-2 w-56 bg-white/10 backdrop-blur-md border border-white/10 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
+              <div class="py-2">
+                <a href="portfolio.html" class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary">Featured Works</a>
+                <a href="authors.html" class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary">Authors</a>
+                <a href="author-profile.html" class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary">Author Profile</a>
+                <a href="books.html" class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary">Books Catalog</a>
+                <a href="events.html" class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary">Events</a>
+                <a href="licensing.html" class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary">Licensing</a>
               </div>
             </div>
-            <a
-              class="text-sm font-semibold hover:text-primary transition-colors"
-              href="news.html"
-              >News</a
-            >
-            <a
-              class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:brightness-110 transition-all"
-              href="contact.html"
-              >Get in Touch</a
-            >
           </div>
-</div>
-</nav>
-<header class="pt-16 md:pt-24 pb-12 px-6 text-center max-w-4xl mx-auto">
-<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Reach Out to Us</span>
-<h1 class="font-display text-4xl md:text-6xl mb-6 text-white">Let's craft the next great story together</h1>
-<p class="text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
+          <a class="text-sm font-semibold hover:text-primary transition-colors" href="news.html">News</a>
+          <a class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:brightness-110 transition-all" href="contact.html">Get in Touch</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="p-2 text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+<header class="relative pt-16 md:pt-24 pb-12 px-6 text-center max-w-4xl mx-auto overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-10 pointer-events-none">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full blur-[80px]"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-green-900 rounded-full blur-[80px]"></div>
+    </div>
+    <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Reach Out to Us</span>
+    <h1 class="font-display text-4xl md:text-6xl mb-6 text-white">Let's craft the next great story together</h1>
+    <p class="text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
         Whether you're an aspiring author seeking representation or a business partner interested in literary licensing, we're here to bridge the gap.
     </p>
 </header>
@@ -316,9 +278,9 @@
 </div>
 </main>
 <footer class="bg-surface-dark border-t border-white/5 py-16 px-6">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="max-w-7xl mx-auto px-6 h-20 flex flex-col md:flex-row justify-between items-center gap-8">
 <div class="flex flex-col items-center md:items-start gap-4">
-<img alt="Griom Logo" class="h-8 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbqUb_7_7RPId_9zfMZsC7JxSY4DcB1P_tmPNqbkjcebNCKlH5KSCWLOqBG-_nzJmcBjEJ9dQAWfbZxz17oTH1VJ1OZSkKCov4oj8J3tJwroB4RQt5Q1uohylphU1SRH8dZAdozQ0703F92b2coQAjSEJlG8439TkO0ZvxZNp-aaL6fMuXw1FEl8uegiEMlckOwoJJvVWjpyEtSgWygozrbplXxM0srCk9fwsrTAtMO7TwGtCo_V1aSBMa1f3D4vhcm8r0Fjqv5o_V"/>
+<img alt="Griom Logo" class="h-8 opacity-90" src="images/logo-dark.jpg"/>
 <p class="text-sm text-white/40">© 2024 Griom Literary Entertainment. All rights reserved.</p>
 </div>
 <div class="flex gap-8 text-sm font-medium text-white/50">
