@@ -108,12 +108,19 @@
               href="news.html"
               >News</a
             >
+            <a
+              class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all"
+              href="contact.html"
+              >Get in Touch</a
+            >
           </div>
-</div>
-<button class="md:hidden text-primary">
-<span class="material-icons">menu</span>
-</button>
-</div>
+          <div class="md:hidden flex items-center gap-4">
+            <a href="contact.html" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-full font-bold text-xs transition-all">Get in Touch</a>
+            <button id="mobile-menu-toggle" class="p-2 text-primary hover:bg-neutral-deep/5 rounded-lg transition-colors">
+              <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+          </div>
+        </div>
 </nav>
 <!-- Hero Section -->
 <header class="relative py-24 overflow-hidden bg-neutral-deep text-white">
@@ -397,6 +404,57 @@
 </div>
 </div>
 </footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
-</body></html>
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] hidden">
+      <div id="mobile-menu-overlay" class="absolute inset-0 bg-neutral-deep/80 backdrop-blur-sm"></div>
+      <div id="mobile-menu-content" class="absolute right-0 top-0 bottom-0 w-80 bg-white dark:bg-neutral-deep border-l border-neutral-deep/10 dark:border-white/10 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out p-8">
+        <div class="flex justify-between items-center mb-12">
+          <img alt="Griom Logo" class="h-10 w-auto" src="images/logo-light.jpg"/>
+          <button id="mobile-menu-close" class="p-2 text-primary hover:bg-neutral-muted/20 rounded-lg transition-colors">
+            <span class="material-symbols-outlined text-3xl">close</span>
+          </button>
+        </div>
+        <nav class="flex flex-col gap-6">
+          <a class="text-xl font-bold text-neutral-deep dark:text-white hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="text-xl font-bold text-neutral-deep dark:text-white hover:text-primary transition-colors" href="services.html">Services</a>
+          <a class="text-xl font-bold text-neutral-deep dark:text-white hover:text-primary transition-colors" href="about.html">About</a>
+          <div class="flex flex-col gap-4 pl-4 border-l border-neutral-deep/10 dark:border-white/10">
+            <span class="text-sm font-bold text-neutral-muted uppercase tracking-widest">Portfolio</span>
+            <a class="text-lg font-medium text-neutral-deep/80 dark:text-white/80 hover:text-primary transition-colors" href="portfolio.html">Featured Works</a>
+            <a class="text-lg font-medium text-neutral-deep/80 dark:text-white/80 hover:text-primary transition-colors" href="authors.html">Authors</a>
+            <a class="text-lg font-medium text-neutral-deep/80 dark:text-white/80 hover:text-primary transition-colors" href="books.html">Books Catalog</a>
+            <a class="text-lg font-medium text-neutral-deep/80 dark:text-white/80 hover:text-primary transition-colors" href="events.html">Events</a>
+            <a class="text-lg font-medium text-neutral-deep/80 dark:text-white/80 hover:text-primary transition-colors" href="licensing.html">Licensing</a>
+          </div>
+          <a class="text-xl font-bold text-neutral-deep dark:text-white hover:text-primary transition-colors" href="news.html">News</a>
+          <a class="mt-8 bg-primary text-white px-8 py-4 rounded-full font-bold text-center shadow-lg" href="contact.html">Get in Touch</a>
+        </nav>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true, offset: 100 });
+      
+      const toggleMobileMenu = () => {
+        const menu = document.getElementById('mobile-menu');
+        const content = document.getElementById('mobile-menu-content');
+        if (menu.classList.contains('hidden')) {
+          menu.classList.remove('hidden');
+          setTimeout(() => content.classList.remove('translate-x-full'), 10);
+          document.body.style.overflow = 'hidden';
+        } else {
+          content.classList.add('translate-x-full');
+          setTimeout(() => {
+            menu.classList.add('hidden');
+            document.body.style.overflow = '';
+          }, 300);
+        }
+      };
+
+      document.getElementById('mobile-menu-toggle')?.addEventListener('click', toggleMobileMenu);
+      document.getElementById('mobile-menu-close')?.addEventListener('click', toggleMobileMenu);
+      document.getElementById('mobile-menu-overlay')?.addEventListener('click', toggleMobileMenu);
+    </script>
+  </body>
+</html>
