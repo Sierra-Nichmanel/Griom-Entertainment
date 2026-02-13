@@ -38,6 +38,7 @@
             scrollbar-width: none;
         }
     </style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-background-dark text-white min-h-screen font-display selection:bg-primary selection:text-background-dark">
 <nav class="sticky top-0 z-50 bg-background-dark/90 backdrop-blur-md border-b border-white/5">
@@ -145,7 +146,7 @@
 </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-20">
-<div class="group">
+<div class="group" data-aos="zoom-in" data-aos-delay="100">
 <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-8 bg-surface-dark">
 <img alt="Elena Vance" class="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000 ease-out scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5T5tGTqCb4BsKwOuigRHIY1C0W5DyJIVR7GDhqTQDjzzCVCRpf3NOVPxVpyTZDc5SbHvALWn0yVDWEAUX9p8Ukm4lMtZJWPbEKQNOw9thg-NWupY7dSS6xtEoz-4mOHH53nj_Y1uZhCXy3QMgf94NusiEHFBIKIb2Oyh-G-8VkIWc6PuX3SyispnLs1afwG56Z9HJs3LAH8cj5XQNpty4yCeHtPmoGIaYWCcSuAK8_4BV9HCf2lNUTgVgNLGhC3CT4O5PZ9gPd7HZ"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-8">
@@ -166,7 +167,7 @@
 </a>
 </div>
 </div>
-<div class="group">
+<div class="group" data-aos="zoom-in" data-aos-delay="200">
 <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-8 bg-surface-dark">
 <img alt="Marcus Thorne" class="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000 ease-out scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeU3dIH99CqV5q_X0uJ4BlR1ox4RKOK6p6QvnRYnaXxYaUrcnmKo0S969AKLHjyWLLzbM347lM9RJNif67oTNSEY7cUDzFsCo-HAjLveJPtiwgmWtFgIqViK0QYH1fLHBwW8XIeTKDvECo4jAtQ7fONgANCNj5-HdYb1Ir7LLDV-e3q6hB9lxj2FJduKIhMV5Yv8IXjJGvY-MSIPgSJimLZJogXjlKC5AJsw_dHRrjMj0LX0svRVg2TJOyiNCGUj7QVfn_ervy613v"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-8">
@@ -187,7 +188,7 @@
 </a>
 </div>
 </div>
-<div class="group">
+<div class="group" data-aos="zoom-in" data-aos-delay="300">
 <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-8 bg-surface-dark">
 <img alt="Sarah Jenkins" class="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-1000 ease-out scale-105 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDgLqbDV2OmgNQLQfgoJKzKREgVK8zYo4fJ44_5fAfI9JOI4FS3X0KzOi3DVua8C9WYiuWoD_n5RziRPu9V1xMn1hPbiyWvbnVlx3g-glUOCnSMx97p7J6kRnS08-2gOiCfDjyr5vtP407jIiyreBXkNgn6S2IdjA-4EdYEQA2PRc-wxknxhsXXL1qI4-Un5lFAnS9myH5M6IuUor66lcBD-tpDW3tfs85S0LPWdj8c7rmYS_9UR4Oinf3iaRRQ3SG9MQV9vmSDvn4"/>
 </div>
@@ -368,4 +369,6 @@
 </div>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
 </body></html>

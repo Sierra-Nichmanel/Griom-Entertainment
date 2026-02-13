@@ -62,6 +62,7 @@
             border-radius: 10px;
         }
     </style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
 <!-- Navigation -->
@@ -148,7 +149,7 @@
 </nav>
 <main class="max-w-7xl mx-auto px-6 py-8">
 <!-- Featured Event Hero -->
-<section class="relative rounded-xl overflow-hidden mb-16 h-[500px] flex items-end">
+<section class="relative rounded-xl overflow-hidden mb-16 h-[500px] flex items-end" data-aos="fade-up">
 <img alt="Next Major Event" class="absolute inset-0 w-full h-full object-cover" data-alt="Dramatic stage lighting with audience silhouettes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsHF2BaFUR3ECUqS3Retjw2yIqPx0ULghmFm5xj9kmdqG1DSaFovyMpXcCkYAZsFHcd2OvCY1phloPH4nxjTkjH3khjq_HpphipURUO0Tn_s_Q1JAzBkTtb1VOvozfS-n8kG_85JKagUHffC5oJUTGZcEzpuKXEAJUrKmAUy2qQ67DdJF9FHDpzllTCUA_dPpvHXzy4x3Sei2IyUIjAjg1-1z4JIaXy-4x8w_dXNmxkfWv6ashnsppEVkwbd5PeQwBR3f2LruY64pG"/>
 <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
 <div class="relative z-10 p-8 md:p-12 w-full flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -192,7 +193,7 @@
 </div>
 </section>
 <!-- Filters and View Toggle -->
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12" data-aos="fade-down">
 <div class="flex flex-wrap gap-3">
 <button class="px-5 py-2 bg-primary text-white rounded-full text-sm font-medium">All Events</button>
 <button class="px-5 py-2 bg-surface-dark text-slate-400 hover:text-white rounded-full text-sm font-medium border border-primary/10 transition-colors">Poetry Slams</button>
@@ -443,4 +444,6 @@
 <div data-location="New York City"></div>
 <div data-location="London"></div>
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
 </body></html>

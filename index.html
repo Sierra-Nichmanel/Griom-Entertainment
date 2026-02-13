@@ -60,7 +60,8 @@
         scrollbar-width: none;
       }
     </style>
-  </head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
   <body class="font-display">
     <nav
       class="fixed w-full z-50 glass-nav border-b border-white/10 bg-primary/80"
@@ -163,7 +164,7 @@
       ></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div data-aos="fade-up">
             <span
               class="inline-block py-1 px-3 rounded-full bg-accent/10 text-accent border border-accent/20 font-bold text-xs uppercase tracking-widest mb-6"
             >
@@ -171,6 +172,7 @@
             </span>
             <h1
               class="text-5xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-8"
+              data-aos="fade-up" data-aos-delay="100"
             >
               Amplifying Stories That
               <span class="text-accent">Shape Culture.</span>
@@ -200,7 +202,7 @@
               </a>
             </div>
           </div>
-          <div class="relative">
+          <div class="relative" data-aos="fade-left" data-aos-delay="200">
             <div
               class="aspect-square rounded-3xl overflow-hidden bg-brand-dark border border-white/10 shadow-2xl"
             >
@@ -245,6 +247,7 @@
         <div class="grid md:grid-cols-3 gap-8">
           <div
             class="group p-8 rounded-3xl border border-white/10 bg-primary/30 hover:border-accent/50 hover:bg-primary/50 transition-all"
+            data-aos="fade-up" data-aos-delay="100"
           >
             <div
               class="w-14 h-14 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
@@ -276,6 +279,7 @@
           </div>
           <div
             class="group p-8 rounded-3xl border border-accent/30 bg-primary/80 hover:border-accent hover:bg-primary transition-all shadow-lg shadow-accent/5"
+            data-aos="fade-up" data-aos-delay="200"
           >
             <div
               class="w-14 h-14 bg-accent text-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"
@@ -724,5 +728,7 @@
         </div>
       </div>
     </footer>
-  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
+</body>
 </html>

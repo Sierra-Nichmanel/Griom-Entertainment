@@ -38,6 +38,7 @@
             font-family: 'Playfair Display', serif;
         }
     </style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
 <nav class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
@@ -119,7 +120,7 @@
 </div>
 </nav>
 <header class="py-24 px-6 border-b border-slate-100 dark:border-slate-900">
-<div class="max-w-4xl mx-auto text-center">
+<div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
 <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 text-primary dark:text-slate-50">Our Literary &amp; Media Services</h1>
 <p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-light">
                 Empowering storytellers and creators through bespoke representation, strategic production, and visionary intellectual property development.
@@ -128,7 +129,7 @@
 </header>
 <main class="max-w-7xl mx-auto px-6 py-20 space-y-32">
 <section class="grid md:grid-cols-2 gap-16 items-center">
-<div class="order-2 md:order-1">
+<div class="order-2 md:order-1" data-aos="fade-right">
 <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/20 text-primary rounded-xl mb-6">
 <span class="material-icons-round text-3xl">auto_stories</span>
 </div>
@@ -160,15 +161,15 @@
 </li>
 </ul>
 </div>
-<div class="order-1 md:order-2 bg-slate-100 dark:bg-slate-900 rounded-3xl overflow-hidden aspect-square flex items-center justify-center p-12">
+<div class="order-1 md:order-2 bg-slate-100 dark:bg-slate-900 rounded-3xl overflow-hidden aspect-square flex items-center justify-center p-12" data-aos="fade-left" data-aos-delay="200">
 <img alt="Books and quill" class="w-full h-full object-cover rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBauUcfTVKnfhkCKsQA5AkS312Ee7t__8V2WwfXx0Z9imzZBUmLF-fze9YuucILdwwJPiY_ARbv4ACh-68xmVe9hS5xh66LPr3BHDUfz0NDYLoxTjxPgOVnXpGfQRTMwyeOeD5ywF1HzyXjOnIrsOvi_SyW_6bSpOhwZ719xQaecQAcFPVKN5E2JzXedC4L5Bbtm0hlWVbaMCjrvLC455APD3MjKYW4Wq90JD9rLm0uW1O5cr7ieXu0Ua2IsbzJDMv9bOe34DrKc7xP"/>
 </div>
 </section>
 <section class="grid md:grid-cols-2 gap-16 items-center">
-<div class="bg-slate-100 dark:bg-slate-900 rounded-3xl overflow-hidden aspect-square flex items-center justify-center p-12">
+<div class="bg-slate-100 dark:bg-slate-900 rounded-3xl overflow-hidden aspect-square flex items-center justify-center p-12" data-aos="fade-right" data-aos-delay="200">
 <img alt="Microphone and creative setup" class="w-full h-full object-cover rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo9WzTAXpwlGEC0juqCjAnriZlS8ZSG2ojHM2_c9xyB-ik8tNmwo0qwpHaLaZc9XBv0UsTJPie4S1ZwZbNHSHX2jQMNRCiNvRdhXNJH4WldRiBdiP0mJ6hdoSHx37ug71zKofLJyrjsAvneVVIJ3_ctOh6aDX7mVEU31YKjdTz_J2rRaETlgRYl2VB5uKi_tj00NiMQtvatBs203EYrwC2sJdT3qOAYM8MGrozOObFQSMimSIeST_MwlCWQrg9d24bEQJzKYI-xono"/>
 </div>
-<div>
+<div data-aos="fade-left">
 <div class="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/20 text-primary rounded-xl mb-6">
 <span class="material-icons-round text-3xl">mic_external_on</span>
 </div>
@@ -251,4 +252,6 @@
 <span class="material-icons-round text-slate-800 dark:text-yellow-400">dark_mode</span>
 </button>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
 </body></html>

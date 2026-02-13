@@ -52,6 +52,7 @@
             overflow: hidden;
         }
     </style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-forest-dark text-slate-100 font-display transition-colors duration-300">
 <header class="sticky top-0 z-50 w-full bg-forest-dark/90 backdrop-blur-md border-b border-forest-border">
@@ -75,7 +76,7 @@
               href="about.html"
               >About</a
             >
-            <div class="relative group">
+            <article class="relative group" data-aos="zoom-in" data-aos-delay="100">
               <button
                 class="text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1"
               >
@@ -118,7 +119,7 @@
                   >
                 </div>
               </div>
-            </div>
+            </article>
             <a
               class="text-sm font-semibold hover:text-primary transition-colors"
               href="news.html"
@@ -204,7 +205,7 @@
 </article>
 <article class="group">
 <div class="aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-forest-card border border-forest-border">
-<img alt="News 2" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWDS_ePElXuRzkXBZmoHwE7iPOTPdgV6B9BbiGboMTfIHlY8LyQZcHIzLVMKgJohagavihFEqWE7X7uVaRzoJ4oPU03ReiJr8H0Ius_SctqlM50Z7wv099Lup53JWKx-R55gKWJhSB-t0xryEFaQ40xB6kctIb-G3DlQWoAXAODaZxVANdpsaHu9Iia-0hD1VThRXYSLe9z1duxzfzmbN56EMSzCBBzy_x6y8WwHnEAzVBM68flbcsAMw9FpUAfdfh0eAGTaECdcWy"/>
+<img alt="News 2" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWDS_ePElXuRzkXBZmoHwE7iPOTPdgV6B9BbiGboMTyIHlY8LyQZcHIzLVMKgJohagavihFEqWE7X7uVaRzoJ4oPU03ReiJr8H0Ius_SctqlM50Z7wv099Lup53JWKx-R55gKWJhSB-t0xryEFaQ40xB6kctIb-G3DlQWoAXAODaZxVANdpsaHu9Iia-0hD1VThRXYSLe9z1duxzfzmbN56EMSzCBBzy_x6y8WwHnEAzVBM68flbcsAMw9FpUAfdfh0eAGTaECdcWy"/>
 </div>
 <span class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3 block">Author Spotlight</span>
 <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors leading-snug">Meet Sarah J. Penfold: The Voice of Modern Noir</h3>
@@ -308,7 +309,7 @@
 </aside>
 </div>
 </main>
-<section class="bg-forest-card py-24 mt-24 border-y border-forest-border">
+<section class="bg-primary/5 dark:bg-primary/10 py-16 px-6" data-aos="fade-up">
 <div class="max-w-4xl mx-auto px-6 text-center">
 <span class="text-xs font-bold uppercase tracking-[0.4em] text-primary mb-6 block">Stay Updated</span>
 <h2 class="text-4xl md:text-5xl font-bold mb-10 text-white">Subscribe to the Griom Press List</h2>
@@ -372,4 +373,6 @@
 </div>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
 </body></html>

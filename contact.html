@@ -50,10 +50,11 @@
             color: #6a8b6b !important;
         }
     </style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="min-h-screen font-sans">
 <nav class="border-b border-white/10 sticky top-0 bg-deep-green/80 backdrop-blur-md z-50">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="max-w-7xl mx-auto px-6 py-20 relative z-10" data-aos="fade-up">center justify-between">
 <a href="index.html" class="flex items-center gap-4">
 <img alt="Griom Logo" class="h-10 w-auto object-contain" src="images/logo-dark.jpg"/>
 </a>
@@ -81,7 +82,7 @@
                 <span class="material-symbols-outlined text-sm">expand_more</span>
               </button>
               <div
-                class="absolute top-full left-0 mt-2 w-56 bg-white/10 backdrop-blur-md border border-white/10 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden"
+                class="absolute top-full left-0 mt-2 w-56<div class="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10" data-aos="fade-left" data-aos-delay="200"> rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden"
               >
                 <div class="py-2">
                   <a
@@ -356,4 +357,6 @@
     }
 </script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
 </body></html>
