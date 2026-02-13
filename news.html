@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Griom News &amp; Press Room</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#a7f3d0", // Light green accent
+                        "primary-dark": "#059669",
+                        "forest-dark": "#06130e", // Deep dark green background
+                        "forest-card": "#0d1f18", // Slightly lighter for cards
+                        "forest-border": "rgba(167, 243, 208, 0.15)",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .line-clamp-4 {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-forest-dark text-slate-100 font-display transition-colors duration-300">
+<header class="sticky top-0 z-50 w-full bg-forest-dark/90 backdrop-blur-md border-b border-forest-border">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2">
+<img src="images/logo-dark.jpg" alt="Griom Logo" class="h-10 w-auto object-contain">
+</a>
+<div class="hidden md:flex items-center space-x-8">
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="services.html"
+              >Services</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="about.html"
+              >About</a
+            >
+            <div class="relative group">
+              <button
+                class="text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1"
+              >
+                Portfolio
+                <span class="material-symbols-outlined text-sm">expand_more</span>
+              </button>
+              <div
+                class="absolute top-full left-0 mt-2 w-56 bg-forest-card border border-forest-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden"
+              >
+                <div class="py-2">
+                  <a
+                    href="portfolio.html"
+                    class="block px-4 py-2 text-sm text-slate-300 hover:bg-white/5 hover:text-primary"
+                    >Featured Works</a
+                  >
+                  <a
+                    href="authors.html"
+                    class="block px-4 py-2 text-sm text-slate-300 hover:bg-white/5 hover:text-primary"
+                    >Authors</a
+                  >
+                  <a
+                    href="author-profile.html"
+                    class="block px-4 py-2 text-sm text-slate-300 hover:bg-white/5 hover:text-primary"
+                    >Author Profile</a
+                  >
+                  <a
+                    href="books.html"
+                    class="block px-4 py-2 text-sm text-slate-300 hover:bg-white/5 hover:text-primary"
+                    >Books Catalog</a
+                  >
+                  <a
+                    href="events.html"
+                    class="block px-4 py-2 text-sm text-slate-300 hover:bg-white/5 hover:text-primary"
+                    >Events</a
+                  >
+                  <a
+                    href="licensing.html"
+                    class="block px-4 py-2 text-sm text-slate-300 hover:bg-white/5 hover:text-primary"
+                    >Licensing</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="news.html"
+              >News</a
+            >
+            <a
+              class="bg-primary text-forest-dark px-6 py-2.5 rounded-full font-bold text-sm hover:bg-white transition-all"
+              href="contact.html"
+              >Get in Touch</a
+            >
+          </div>
+<button class="md:hidden text-white">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-16">
+<div class="mb-16">
+<div class="flex items-center gap-2 text-sm text-primary/60 mb-6 uppercase tracking-[0.2em] font-bold">
+<a class="hover:text-primary" href="index.html">Home</a>
+<span>/</span>
+<span class="text-primary">Press Room</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-bold text-white leading-tight tracking-tight">
+            News &amp; Updates
+        </h1>
+<p class="mt-6 text-xl text-slate-400 max-w-2xl leading-relaxed italic">
+            The latest announcements, major deals, and insights from the front lines of global literary entertainment.
+        </p>
+</div>
+<section class="mb-24">
+<div class="group relative overflow-hidden rounded-2xl bg-forest-card border border-forest-border shadow-2xl flex flex-col lg:flex-row">
+<div class="lg:w-3/5 h-[450px] lg:h-auto overflow-hidden">
+<img alt="Featured story background" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF09YIhvfzKvxUFEExUseyNNX47txG_UlTaxgxTKo_k5MgEM-YR1f0kb0m6UeG9m00p__0Q8umrcdn_bkQP-_Z2NZIa1rk8FEup19KvCIlrlAg5YaGxrS8sj1YvHAtfEN1BeXk7o0hKZUi20LuIcXOsMFu6aY_7Q_cAkmJ6wXed7owy5lwaLZpXQ5uKeEERNsrl2tFIgjHDqZ7YSS1xeYVRmS60chmLoPTTyXCvoJgrWl-SeOPBQpbdIntLKF2ZOf6fv0cijWq1R1s"/>
+</div>
+<div class="lg:w-2/5 p-8 md:p-14 flex flex-col justify-center">
+<span class="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-bold rounded-full mb-8 w-fit tracking-widest uppercase">Breaking Deal</span>
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                    Griom Secures 7-Figure Deal for Debut Thriller 'The Last Manuscript'
+                </h2>
+<p class="text-slate-400 mb-10 line-clamp-4 text-lg italic">
+                    In a highly competitive auction involving six major publishing houses, Griom Literary Agency has successfully brokered a landmark world-rights deal for newcomer Elena Vance’s psychological thriller.
+                </p>
+<div class="flex items-center gap-4 mt-auto">
+<span class="text-sm font-semibold text-slate-500 uppercase tracking-widest">Oct 24, 2023</span>
+<div class="h-px flex-grow bg-forest-border"></div>
+<a class="text-primary font-bold hover:text-white flex items-center gap-1 group-link" href="#">
+                        READ ARTICLE <span class="material-icons text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-16 border-y border-forest-border py-8">
+<div class="flex flex-wrap items-center gap-4 md:gap-10">
+<button class="text-primary font-bold border-b-2 border-primary pb-1 px-1 tracking-widest uppercase text-sm">All Stories</button>
+<button class="text-slate-400 hover:text-primary transition-colors pb-1 px-1 tracking-widest uppercase text-sm">Press Releases</button>
+<button class="text-slate-400 hover:text-primary transition-colors pb-1 px-1 tracking-widest uppercase text-sm">Author Spotlights</button>
+<button class="text-slate-400 hover:text-primary transition-colors pb-1 px-1 tracking-widest uppercase text-sm">Industry News</button>
+<button class="text-slate-400 hover:text-primary transition-colors pb-1 px-1 tracking-widest uppercase text-sm">Events</button>
+</div>
+<div class="relative w-full md:w-80">
+<input class="w-full pl-12 pr-4 py-3 bg-forest-card border border-forest-border text-white rounded-lg focus:ring-primary focus:border-primary transition-all placeholder:text-slate-600" placeholder="Search news archive..." type="text"/>
+<span class="material-icons absolute left-4 top-3.5 text-slate-500">search</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-8 space-y-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-forest-card border border-forest-border">
+<img alt="News 1" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJP7AzxkWRnIbqlVsDOi77IZTA5Nt_6Ro_fSlWIT-qyAM4ICAPnEHLNJOqRfuxb60vc6nO4vKtrggTvpS6WUzbRFyUg02xq2g58uCWAdHFiFY4vhUviiSvMu_Lwrx2bgJ255B1lx2kDvkmcK-f6XKjdScESqg4-M0eX2jNnJGtNWDU3EfSpKQ_E2gt-Uojk2LzAlHYUSBeOwph-4EtTGIBZpr7P7Athw1bY95Zth2130xrCNajywxAu9xA4hMrSyBpiPeOZOwvYNik"/>
+</div>
+<span class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3 block">Industry News</span>
+<h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors leading-snug">Griom Expands International Rights Team with New London Office</h3>
+<p class="text-slate-400 line-clamp-3 mb-6 italic leading-relaxed">
+                        The agency marks its 10th anniversary by establishing a dedicated European hub to better serve its growing roster of talent.
+                    </p>
+<div class="flex items-center justify-between text-xs tracking-widest">
+<span class="text-slate-500 uppercase">Oct 18, 2023</span>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">DETAILS <span class="material-icons text-sm">chevron_right</span></a>
+</div>
+</article>
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-forest-card border border-forest-border">
+<img alt="News 2" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWDS_ePElXuRzkXBZmoHwE7iPOTPdgV6B9BbiGboMTfIHlY8LyQZcHIzLVMKgJohagavihFEqWE7X7uVaRzoJ4oPU03ReiJr8H0Ius_SctqlM50Z7wv099Lup53JWKx-R55gKWJhSB-t0xryEFaQ40xB6kctIb-G3DlQWoAXAODaZxVANdpsaHu9Iia-0hD1VThRXYSLe9z1duxzfzmbN56EMSzCBBzy_x6y8WwHnEAzVBM68flbcsAMw9FpUAfdfh0eAGTaECdcWy"/>
+</div>
+<span class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3 block">Author Spotlight</span>
+<h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors leading-snug">Meet Sarah J. Penfold: The Voice of Modern Noir</h3>
+<p class="text-slate-400 line-clamp-3 mb-6 italic leading-relaxed">
+                        We sit down with Penfold to discuss the release of her fourth novel and how she constructs her narrative webs.
+                    </p>
+<div class="flex items-center justify-between text-xs tracking-widest">
+<span class="text-slate-500 uppercase">Oct 12, 2023</span>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">DETAILS <span class="material-icons text-sm">chevron_right</span></a>
+</div>
+</article>
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-forest-card border border-forest-border">
+<img alt="News 3" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhxTeuihiwFl1RaWMtQbvAT6l2dt1d4zHpqYfVoIZ_pClY-YRQyduScJQf6q5Ic9kc8XBO0eOpXvnubB45AWCAAdpdVXmS99Ce96-xd8V25tPMNYNuRw_907ktyBNZWHCSh_K9CUX4vS4U51ZNFpPHG0dGu9FjXTnOJkDQzJuA8nevt-_UBw2rhMcNjEVm9ynstagHkEwZL4vEX2BXcfk5xrC_9__a5PdXDGhC7fjtdScpdszrF0zwtMOcjNvhWSFl5POohyvgQ0uF"/>
+</div>
+<span class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3 block">Press Release</span>
+<h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors leading-snug">The Future of Digital Publishing: Insights from our CEO</h3>
+<p class="text-slate-400 line-clamp-3 mb-6 italic leading-relaxed">
+                        Marcus Griom outlines the agency's 2024 vision, focusing on hybrid publishing models and AI in editorial workflows.
+                    </p>
+<div class="flex items-center justify-between text-xs tracking-widest">
+<span class="text-slate-500 uppercase">Oct 05, 2023</span>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">DETAILS <span class="material-icons text-sm">chevron_right</span></a>
+</div>
+</article>
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-xl mb-6 bg-forest-card border border-forest-border">
+<img alt="News 4" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-arBMN5z-hw41iH2gOJdEgwMiPe0obQaFJ3qTyLU_qppMkrSJ_GyrdQLvrcxiW0ZGIBwzuKwpxWOfcUCj0pVUCkS-glYzkO9D2OIDWVcM72xOxbUJXrkfWN4D9Bwf7zlnKpNaJUm_S83A_SCzno3LKFy1ZDbxjQNhg_9X8sd08jpcTiXM-nUh4PQbyE6TPuMk5t3uiomtXV8QiAi-dMEMKam2bCdiMNZZpR2I5uaQds7u0JwZSIzctc5Z7UG9vrHEFXR-5TFKpcp-"/>
+</div>
+<span class="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-3 block">Events</span>
+<h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors leading-snug">Frankfurt Book Fair 2023: Highlights &amp; Key Takeaways</h3>
+<p class="text-slate-400 line-clamp-3 mb-6 italic leading-relaxed">
+                        A wrap-up of the world's largest trade fair for books, featuring Griom’s most buzzed-about titles and global acquisitions.
+                    </p>
+<div class="flex items-center justify-between text-xs tracking-widest">
+<span class="text-slate-500 uppercase">Sept 28, 2023</span>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">DETAILS <span class="material-icons text-sm">chevron_right</span></a>
+</div>
+</article>
+</div>
+<div class="pt-12 text-center">
+<button class="px-12 py-5 border border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-forest-dark transition-all uppercase tracking-[0.2em] text-xs">
+                    Load More Stories
+                </button>
+</div>
+</div>
+<aside class="lg:col-span-4 space-y-14">
+<div class="bg-forest-card rounded-2xl p-10 border border-forest-border">
+<h4 class="text-2xl font-bold mb-6 text-white border-b border-forest-border pb-4">Press Contact</h4>
+<p class="text-slate-400 text-sm mb-8 leading-relaxed">For media inquiries, interview requests, or review copies, please contact our communications department.</p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<span class="material-icons text-primary text-2xl">alternate_email</span>
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Email</p>
+<a class="text-slate-200 hover:text-primary transition-colors text-lg" href="mailto:press@griom.com">press@griom.com</a>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-icons text-primary text-2xl">call</span>
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Phone</p>
+<p class="text-slate-200 text-lg">+1 (555) 234-8900</p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4">
+<h4 class="text-2xl font-bold mb-8 flex items-center gap-3 text-white">
+<span class="material-icons text-primary">emoji_events</span>
+                    Recent Awards
+                </h4>
+<ul class="space-y-10">
+<li class="group border-l-2 border-forest-border hover:border-primary pl-6 transition-all">
+<span class="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em] block mb-2">National Book Award</span>
+<p class="font-bold text-white group-hover:text-primary transition-colors italic text-xl">"The Silence Between Pages" <span class="font-normal opacity-60">by Julian Marsh</span></p>
+</li>
+<li class="group border-l-2 border-forest-border hover:border-primary pl-6 transition-all">
+<span class="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em] block mb-2">Pulitzer Prize Shortlist</span>
+<p class="font-bold text-white group-hover:text-primary transition-colors italic text-xl">"Echoes of a Century" <span class="font-normal opacity-60">by Amanda Reyes</span></p>
+</li>
+<li class="group border-l-2 border-forest-border hover:border-primary pl-6 transition-all">
+<span class="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em] block mb-2">Golden Globe Nominee</span>
+<p class="font-bold text-white group-hover:text-primary transition-colors italic text-xl">"West of the Sun" <span class="font-normal opacity-60">- Best Screenplay</span></p>
+</li>
+</ul>
+</div>
+<div class="bg-primary rounded-2xl p-10 text-forest-dark overflow-hidden relative group">
+<div class="relative z-10">
+<h4 class="text-2xl font-bold mb-4">Agency Media Kit</h4>
+<p class="font-medium opacity-80 text-sm mb-8">Download official logos, headshots, and agency backgrounders for editorial use.</p>
+<button class="w-full py-4 bg-forest-dark text-primary rounded-lg font-bold flex items-center justify-center gap-2 hover:bg-black transition-all text-sm tracking-widest">
+<span class="material-icons text-sm">download</span>
+                        DOWNLOAD ZIP (45MB)
+                    </button>
+</div>
+<div class="absolute -right-6 -bottom-6 opacity-10 group-hover:scale-110 transition-transform duration-700">
+<span class="material-icons text-[160px]">folder_zip</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<section class="bg-forest-card py-24 mt-24 border-y border-forest-border">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="text-xs font-bold uppercase tracking-[0.4em] text-primary mb-6 block">Stay Updated</span>
+<h2 class="text-4xl md:text-5xl font-bold mb-10 text-white">Subscribe to the Griom Press List</h2>
+<p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto italic leading-relaxed">
+            Get breaking news, rights announcements, and author insights delivered directly to your inbox. Designed for agents, scouts, and editors.
+        </p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+<input class="flex-grow px-6 py-4 rounded-lg bg-forest-dark border border-forest-border text-white placeholder:text-slate-600 focus:ring-1 focus:ring-primary focus:outline-none transition-all" placeholder="professional@company.com" type="email"/>
+<button class="px-10 py-4 bg-primary text-forest-dark font-bold rounded-lg hover:bg-white transition-all uppercase tracking-widest text-sm">Join List</button>
+</form>
+<p class="mt-8 text-[10px] text-slate-600 uppercase tracking-widest">
+            By subscribing, you agree to our Privacy Policy and communications.
+        </p>
+</div>
+</section>
+<footer class="bg-forest-dark py-20 border-t border-forest-border">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-8">
+<div class="w-8 h-8 bg-primary flex items-center justify-center rounded">
+<span class="text-forest-dark text-lg font-bold tracking-tighter italic">G</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-white uppercase">Griom</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed italic">
+                    Representing world-class voices across literary and commercial fiction, non-fiction, and screen for over a decade.
+                </p>
+</div>
+<div>
+<h5 class="font-bold mb-8 text-xs uppercase tracking-[0.2em] text-primary">Navigation</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="authors.html">Authors Gallery</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Our Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="licensing.html">Foreign Rights</a></li>
+<li><a class="hover:text-primary transition-colors" href="licensing.html">Film &amp; TV</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-8 text-xs uppercase tracking-[0.2em] text-primary">Connect</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Twitter (X)</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">LinkedIn</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Threads</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-8 text-xs uppercase tracking-[0.2em] text-primary">Legal</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Submission Guidelines</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-forest-border text-[10px] text-slate-600 uppercase tracking-[0.3em]">
+<p>© 2023 Griom Literary Entertainment. All Rights Reserved.</p>
+<p class="mt-4 md:mt-0">Crafting tomorrow's classics.</p>
+</div>
+</div>
+</footer>
+
+</body></html>

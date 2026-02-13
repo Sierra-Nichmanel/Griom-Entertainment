@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Submissions | Griom Literary Entertainment</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#14a81b", // Light green for buttons/accents
+                        "deep-green": "#051a06", // Deep dark green background
+                        "field-border": "#2d5a2f", // Light green borders for forms
+                        "surface-dark": "#0a260b", // Slightly lighter green for cards
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        display: ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #051a06;
+            color: #ffffff;
+        }
+        input, select, textarea {
+            background-color: #0a260b !important;
+            border-color: #2d5a2f !important;
+            color: white !important;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #14a81b !important;
+            --tw-ring-color: #14a81b !important;
+        }
+        ::placeholder {
+            color: #6a8b6b !important;
+        }
+    </style>
+</head>
+<body class="min-h-screen font-sans">
+<nav class="border-b border-white/10 sticky top-0 bg-deep-green/80 backdrop-blur-md z-50">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-4">
+<img alt="Griom Logo" class="h-10 w-auto object-contain" src="images/logo-dark.jpg"/>
+</a>
+<div class="hidden md:flex items-center space-x-8">
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="services.html"
+              >Services</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="about.html"
+              >About</a
+            >
+            <div class="relative group">
+              <button
+                class="text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1"
+              >
+                Portfolio
+                <span class="material-symbols-outlined text-sm">expand_more</span>
+              </button>
+              <div
+                class="absolute top-full left-0 mt-2 w-56 bg-white/10 backdrop-blur-md border border-white/10 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden"
+              >
+                <div class="py-2">
+                  <a
+                    href="portfolio.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
+                    >Featured Works</a
+                  >
+                  <a
+                    href="authors.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
+                    >Authors</a
+                  >
+                  <a
+                    href="author-profile.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
+                    >Author Profile</a
+                  >
+                  <a
+                    href="books.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
+                    >Books Catalog</a
+                  >
+                  <a
+                    href="events.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
+                    >Events</a
+                  >
+                  <a
+                    href="licensing.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-primary"
+                    >Licensing</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="news.html"
+              >News</a
+            >
+            <a
+              class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:brightness-110 transition-all"
+              href="contact.html"
+              >Get in Touch</a
+            >
+          </div>
+</div>
+</nav>
+<header class="pt-16 md:pt-24 pb-12 px-6 text-center max-w-4xl mx-auto">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Reach Out to Us</span>
+<h1 class="font-display text-4xl md:text-6xl mb-6 text-white">Let's craft the next great story together</h1>
+<p class="text-lg text-white/70 max-w-2xl mx-auto leading-relaxed">
+        Whether you're an aspiring author seeking representation or a business partner interested in literary licensing, we're here to bridge the gap.
+    </p>
+</header>
+<main class="max-w-7xl mx-auto px-6 pb-24">
+<section class="mb-16 bg-surface-dark border border-field-border rounded-3xl p-8 md:p-12 shadow-2xl">
+<div class="flex items-center gap-3 mb-10">
+<span class="material-symbols-outlined text-primary text-3xl">menu_book</span>
+<h2 class="text-3xl font-display font-bold text-white">Submission Guidelines</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<h3 class="text-xl font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">visibility</span>
+                    What we look for
+                </h3>
+<ul class="space-y-4 text-white/80 list-none">
+<li class="flex gap-3">
+<span class="text-primary font-bold">•</span>
+<span>Compelling voices in Fiction, Non-Fiction, and Young Adult literature.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-primary font-bold">•</span>
+<span>Diverse stories that explore unique cultural perspectives.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-primary font-bold">•</span>
+<span>Well-researched non-fiction that offers new insights.</span>
+</li>
+</ul>
+</div>
+<div class="space-y-6">
+<h3 class="text-xl font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">edit_note</span>
+                    Formatting requirements
+                </h3>
+<ul class="space-y-4 text-white/80 list-none">
+<li class="flex gap-3">
+<span class="text-primary font-bold">•</span>
+<span>Standard manuscript format (Times New Roman, 12pt, double-spaced).</span>
+</li>
+<li class="flex gap-3">
+<span class="text-primary font-bold">•</span>
+<span>Files must be in PDF or .docx format.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-primary font-bold">•</span>
+<span>Include a one-page synopsis and the first three chapters.</span>
+</li>
+</ul>
+</div>
+<div class="space-y-6">
+<h3 class="text-xl font-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">send_and_archive</span>
+                    How to submit
+                </h3>
+<ul class="space-y-4 text-white/80 list-none">
+<li class="flex gap-3">
+<span class="text-primary font-bold">•</span>
+<span>Use the "Manuscript Submission" tab on the form below.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-primary font-bold">•</span>
+<span>Include your full legal name and contact details.</span>
+</li>
+<li class="flex gap-3">
+<span class="text-primary font-bold">•</span>
+<span>Wait 4-6 weeks for our editorial team to review your material.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<div class="grid lg:grid-cols-3 gap-12">
+<div class="space-y-12 lg:col-span-1">
+<div>
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                    Office Address
+                </h3>
+<p class="text-white/70 leading-relaxed">
+                    Lagos Office Complex, <br/>
+                    Victoria Island, Lagos State,<br/>
+                    Nigeria.
+                </p>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary">alternate_email</span>
+                    Email Enquiries
+                </h3>
+<div class="space-y-4">
+<div>
+<p class="text-sm text-white/40 mb-1">General &amp; Licensing</p>
+<a class="text-primary font-semibold hover:underline" href="mailto:hello@griomlit.com">hello@griomlit.com</a>
+</div>
+<div>
+<p class="text-sm text-white/40 mb-1">Submissions Only</p>
+<a class="text-primary font-semibold hover:underline" href="mailto:submissions@griomlit.com">submissions@griomlit.com</a>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary">share</span>
+                    Follow Us
+                </h3>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-dark border border-field-border flex items-center justify-center text-white/60 hover:bg-primary hover:text-deep-green hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-dark border border-field-border flex items-center justify-center text-white/60 hover:bg-primary hover:text-deep-green hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined">link</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-dark border border-field-border flex items-center justify-center text-white/60 hover:bg-primary hover:text-deep-green hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined">post_add</span>
+</a>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 bg-surface-dark p-8 md:p-12 rounded-3xl border border-field-border shadow-2xl">
+<div class="flex flex-col md:flex-row gap-4 mb-10 p-1 bg-deep-green rounded-xl border border-field-border">
+<button class="flex-1 py-3 px-6 rounded-lg font-bold text-sm transition-all bg-primary text-deep-green shadow-lg" id="tab-general" onclick="switchTab('general')">
+                    General Inquiry
+                </button>
+<button class="flex-1 py-3 px-6 rounded-lg font-bold text-sm transition-all text-white/50 hover:text-primary" id="tab-submission" onclick="switchTab('submission')">
+                    Manuscript Submission
+                </button>
+</div>
+<form class="space-y-6" id="contact-form">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-white/80">Full Name</label>
+<input class="w-full rounded-lg px-4 py-3 focus:ring-2 outline-none transition-all" placeholder="Your name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-white/80">Email Address</label>
+<input class="w-full rounded-lg px-4 py-3 focus:ring-2 outline-none transition-all" placeholder="email@example.com" type="email"/>
+</div>
+</div>
+<div class="hidden space-y-6" id="submission-fields">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-white/80">Manuscript Genre</label>
+<select class="w-full rounded-lg px-4 py-3 focus:ring-2 outline-none transition-all appearance-none">
+<option>Fiction</option>
+<option>Non-Fiction</option>
+<option>Poetry</option>
+<option>Young Adult</option>
+<option>Children's Literature</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-white/80">Manuscript Length (Words)</label>
+<input class="w-full rounded-lg px-4 py-3 focus:ring-2 outline-none transition-all" placeholder="Approx. word count" type="number"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-white/80">Sample Upload (PDF only, max 5MB)</label>
+<div class="border-2 border-dashed border-field-border rounded-lg p-8 flex flex-col items-center justify-center text-white/40 hover:border-primary hover:text-primary transition-colors cursor-pointer bg-deep-green/50">
+<span class="material-symbols-outlined text-4xl mb-2">upload_file</span>
+<p class="text-sm">Click or drag and drop to upload first 3 chapters</p>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-white/80" id="message-label">Your Message</label>
+<textarea class="w-full rounded-lg px-4 py-3 focus:ring-2 outline-none transition-all resize-none" placeholder="Tell us more about your inquiry..." rows="6"></textarea>
+</div>
+<div class="flex items-center gap-3">
+<input class="rounded text-primary focus:ring-primary w-5 h-5 bg-deep-green border-field-border" id="consent" type="checkbox"/>
+<label class="text-sm text-white/60" for="consent">I agree to the <a class="text-primary hover:underline" href="#">Privacy Policy</a> and submission guidelines.</label>
+</div>
+<button class="w-full bg-primary text-deep-green font-bold py-4 rounded-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2" type="submit">
+<span id="submit-btn-text">Send Message</span>
+<span class="material-symbols-outlined text-sm font-bold">send</span>
+</button>
+</form>
+</div>
+</div>
+</main>
+<footer class="bg-surface-dark border-t border-white/5 py-16 px-6">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<img alt="Griom Logo" class="h-8 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbqUb_7_7RPId_9zfMZsC7JxSY4DcB1P_tmPNqbkjcebNCKlH5KSCWLOqBG-_nzJmcBjEJ9dQAWfbZxz17oTH1VJ1OZSkKCov4oj8J3tJwroB4RQt5Q1uohylphU1SRH8dZAdozQ0703F92b2coQAjSEJlG8439TkO0ZvxZNp-aaL6fMuXw1FEl8uegiEMlckOwoJJvVWjpyEtSgWygozrbplXxM0srCk9fwsrTAtMO7TwGtCo_V1aSBMa1f3D4vhcm8r0Fjqv5o_V"/>
+<p class="text-sm text-white/40">© 2024 Griom Literary Entertainment. All rights reserved.</p>
+</div>
+<div class="flex gap-8 text-sm font-medium text-white/50">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Accessibility</a>
+</div>
+</div>
+</footer>
+<script>
+    function switchTab(type) {
+        const generalBtn = document.getElementById('tab-general');
+        const submissionBtn = document.getElementById('tab-submission');
+        const submissionFields = document.getElementById('submission-fields');
+        const messageLabel = document.getElementById('message-label');
+        const submitBtnText = document.getElementById('submit-btn-text');
+        const activeClasses = ['bg-primary', 'text-deep-green', 'shadow-lg'];
+        const inactiveClasses = ['text-white/50', 'hover:text-primary'];
+        if (type === 'submission') {
+            submissionFields.classList.remove('hidden');
+            generalBtn.classList.remove(...activeClasses);
+            generalBtn.classList.add(...inactiveClasses);
+            submissionBtn.classList.remove(...inactiveClasses);
+            submissionBtn.classList.add(...activeClasses);
+            messageLabel.innerText = "Query Letter / Synopsis";
+            submitBtnText.innerText = "Submit Manuscript";
+        } else {
+            submissionFields.classList.add('hidden');
+            submissionBtn.classList.remove(...activeClasses);
+            submissionBtn.classList.add(...inactiveClasses);
+            generalBtn.classList.remove(...inactiveClasses);
+            generalBtn.classList.add(...activeClasses);
+            messageLabel.innerText = "Your Message";
+            submitBtnText.innerText = "Send Message";
+        }
+    }
+</script>
+
+</body></html>

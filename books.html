@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Books Catalog | Griom Literary Entertainment</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-light": "#4ade80",
+              "deep-green": "#050d08",
+              "surface-green": "#0a1f12",
+              "accent-green": "#86efac",
+            },
+            fontFamily: {
+              "display": ["Newsreader", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        .book-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-deep-green text-white selection:bg-primary-light selection:text-deep-green">
+<nav class="sticky top-0 z-50 bg-deep-green/90 backdrop-blur-md border-b border-primary-light/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center text-deep-green">
+<span class="material-icons">auto_stories</span>
+</div>
+<span class="text-2xl font-bold tracking-tight text-white">Griom<span class="text-primary-light">.</span></span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+            <a
+              class="text-sm font-semibold hover:text-primary-light transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary-light transition-colors"
+              href="services.html"
+              >Services</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary-light transition-colors"
+              href="about.html"
+              >About</a
+            >
+            <div class="relative group">
+              <button
+                class="text-sm font-semibold hover:text-primary-light transition-colors flex items-center gap-1"
+              >
+                Portfolio
+                <span class="material-symbols-outlined text-sm">expand_more</span>
+              </button>
+              <div
+                class="absolute top-full left-0 mt-2 w-56 bg-deep-green border border-white/10 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden"
+              >
+                <div class="py-2">
+                  <a
+                    href="portfolio.html"
+                    class="block px-4 py-2 text-sm text-white hover:bg-white/5 hover:text-primary-light"
+                    >Featured Works</a
+                  >
+                  <a
+                    href="authors.html"
+                    class="block px-4 py-2 text-sm text-white hover:bg-white/5 hover:text-primary-light"
+                    >Authors</a
+                  >
+                  <a
+                    href="author-profile.html"
+                    class="block px-4 py-2 text-sm text-white hover:bg-white/5 hover:text-primary-light"
+                    >Author Profile</a
+                  >
+                  <a
+                    href="books.html"
+                    class="block px-4 py-2 text-sm text-white hover:bg-white/5 hover:text-primary-light"
+                    >Books Catalog</a
+                  >
+                  <a
+                    href="events.html"
+                    class="block px-4 py-2 text-sm text-white hover:bg-white/5 hover:text-primary-light"
+                    >Events</a
+                  >
+                  <a
+                    href="licensing.html"
+                    class="block px-4 py-2 text-sm text-white hover:bg-white/5 hover:text-primary-light"
+                    >Licensing</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold hover:text-primary-light transition-colors"
+              href="news.html"
+              >News</a
+            >
+            <a
+              class="bg-primary-light text-deep-green px-6 py-2.5 rounded-full font-bold text-sm hover:brightness-110 transition-all"
+              href="contact.html"
+              >Get in Touch</a
+            >
+          </div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-primary-light/10 text-slate-300">
+<span class="material-icons">search</span>
+</button>
+<a class="bg-primary-light text-deep-green px-5 py-2 rounded-lg font-bold hover:bg-accent-green transition-all" href="contact.html">
+                Contact Us
+            </a>
+</div>
+</div>
+</nav>
+<header class="py-20 bg-deep-green border-b border-white/5">
+<div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+<div class="max-w-3xl">
+<h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-6 leading-tight">
+                Explore our latest <br/><span class="italic text-primary-light">publications</span>
+</h1>
+<p class="text-xl text-slate-400 font-display leading-relaxed mb-10 max-w-2xl">
+                Discover a curated selection of contemporary literature, from ground-breaking fiction to insightful non-fiction and evocative poetry.
+            </p>
+<div class="relative max-w-2xl mx-auto md:mx-0">
+<span class="material-icons absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full pl-12 pr-4 py-5 rounded-xl border border-primary-light/20 bg-surface-green focus:ring-2 focus:ring-primary-light focus:border-transparent outline-none font-display text-lg text-white placeholder-slate-500" placeholder="Search by title, author, or ISBN..." type="text"/>
+</div>
+</div>
+</div>
+</header>
+<section class="sticky top-20 z-40 bg-deep-green/95 backdrop-blur-md py-6 border-b border-primary-light/10">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex flex-wrap items-center gap-3">
+<button class="px-6 py-2 rounded-full bg-primary-light text-deep-green font-bold">All Works</button>
+<button class="px-6 py-2 rounded-full bg-surface-green border border-primary-light/30 hover:border-primary-light text-slate-300 transition-all hover:text-white">Fiction</button>
+<button class="px-6 py-2 rounded-full bg-surface-green border border-primary-light/30 hover:border-primary-light text-slate-300 transition-all hover:text-white">Non-fiction</button>
+<button class="px-6 py-2 rounded-full bg-surface-green border border-primary-light/30 hover:border-primary-light text-slate-300 transition-all hover:text-white">Poetry</button>
+<button class="px-6 py-2 rounded-full bg-surface-green border border-primary-light/30 hover:border-primary-light text-slate-300 transition-all hover:text-white">Drama</button>
+</div>
+<div class="flex items-center gap-4 bg-surface-green px-4 py-2 rounded-lg border border-primary-light/20">
+<span class="text-slate-500 text-sm font-medium">Sort by:</span>
+<select class="bg-transparent border-none focus:ring-0 font-display text-white cursor-pointer py-0">
+<option class="bg-surface-green">Newest Arrivals</option>
+<option class="bg-surface-green">Alphabetical (A-Z)</option>
+<option class="bg-surface-green">Popularity</option>
+</select>
+</div>
+</div>
+</section>
+<main class="max-w-7xl mx-auto px-6 py-20">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-20">
+<div class="group flex flex-col">
+<div class="relative mb-6 aspect-[2/3] overflow-hidden rounded-lg book-shadow bg-surface-green">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Minimalist book cover with green abstract design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHs0kqE5d03nnfrg5RziFn5vlIvxi-5koKCOGflJ2ejB196rVcdrw8i4WhBYFp1Bud8wjD2JFCi1hL3ke8hlGPPQqve1MjHzTaHPlxCcQBZJXc84qcL1foSZkT8FTL-R9ywIByd9Ejo1t15aPi2ClZnH5cneyc6gmbvTSZW-b5vx_4orZQRjj3vkB-lOctqTvILHRPIZmvJYR134rJlSORr9_29PAzvbQMaBSNgPwUsHx3UrcW2Tc7g5CZp-XDmVDTXZK3N1rdHWVU"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary-light text-deep-green text-xs px-3 py-1 rounded-full font-bold tracking-wider uppercase">Fiction</span>
+</div>
+</div>
+<h3 class="text-2xl font-display font-bold text-white mb-1 group-hover:text-primary-light transition-colors leading-tight">Whispers of the Emerald Valley</h3>
+<p class="text-lg italic text-slate-400 mb-6 font-display">by Eleanor Vance</p>
+<button class="mt-auto flex items-center justify-between w-full py-3.5 px-5 rounded-lg border border-primary-light/40 text-primary-light group-hover:bg-primary-light group-hover:text-deep-green transition-all font-bold">
+                Learn More
+                <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="group flex flex-col">
+<div class="relative mb-6 aspect-[2/3] overflow-hidden rounded-lg book-shadow bg-surface-green">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Classic book cover with golden ornaments" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIV88_mAKqnrvS5CX7qE1YSX3h6ssvyLYRK-9O5-8ve7aINAUn45_MixYFSgS5Q-6mfngdnX3QQP9Ld2W1a-3zTBX7DdwCCljZ8OkrEV2S6TGudHM8bjmp4AsqAb15zBYaD5_eturIePipMXVHlT1w4kRCUyQvMiARZJbEoK7Zk_9e8NIuq_kzNpxsP8JOdBjN-iBwqRahwZhFqBszM1WQ5PPXg1_pMRkah6qOCKT8k56NBIjFyunVoB5hwAjoMyXX6K0-SSYbjubU"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary-light text-deep-green text-xs px-3 py-1 rounded-full font-bold tracking-wider uppercase">Poetry</span>
+</div>
+</div>
+<h3 class="text-2xl font-display font-bold text-white mb-1 group-hover:text-primary-light transition-colors leading-tight">The Weaver's Paradox</h3>
+<p class="text-lg italic text-slate-400 mb-6 font-display">by Julian Thorne</p>
+<button class="mt-auto flex items-center justify-between w-full py-3.5 px-5 rounded-lg border border-primary-light/40 text-primary-light group-hover:bg-primary-light group-hover:text-deep-green transition-all font-bold">
+                Learn More
+                <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="group flex flex-col">
+<div class="relative mb-6 aspect-[2/3] overflow-hidden rounded-lg book-shadow bg-surface-green">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Contemporary non-fiction book cover design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf5qc15uQnhP7OBnVoA0TuYYnWvSSoLwctHXs4JlycchPVMO3d8DMW85E4x6NZyRBvNcq1UDPuboZlB21niK0uEfCpGa3YIPxaqddV3X-00-12zCTNbRM9NqKRN2ipp5KBpNeemVYiizdfvSgJQTsezz7Uj1em-E5ZTO21ws26iJyMVJNKTSdHC3aStOoXdLOLKVH1mfGc-34bJXJPa0fWrSFrH7vOi9S5almZHGLy3RBxy13F8rcQ2hwkUsehTYUjWXSPZhheizNR"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary-light text-deep-green text-xs px-3 py-1 rounded-full font-bold tracking-wider uppercase">Non-fiction</span>
+</div>
+</div>
+<h3 class="text-2xl font-display font-bold text-white mb-1 group-hover:text-primary-light transition-colors leading-tight">Echoes of the Silk Road</h3>
+<p class="text-lg italic text-slate-400 mb-6 font-display">by Dr. Marcus Aurel</p>
+<button class="mt-auto flex items-center justify-between w-full py-3.5 px-5 rounded-lg border border-primary-light/40 text-primary-light group-hover:bg-primary-light group-hover:text-deep-green transition-all font-bold">
+                Learn More
+                <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="group flex flex-col">
+<div class="relative mb-6 aspect-[2/3] overflow-hidden rounded-lg book-shadow bg-surface-green">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Dark dramatic thriller book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRghh1NOVDyBdXdO4svlGE4aHrRJVs2HTMkBf5kX3mmvxau4meTSqF6JiE8zxt2O69qVFBMSnN3aXMs3NeeEpxVVsNSl55T0TNMn0i9XDdxeNTDIRo8VzHkM858EVa_R2oVJgA_BAk2Xi5m4nHYMdyg0cAHLlbfbgizkreN28zWNOSlIEndE7jQS78dxsDmqDBl653lbHlXU9L6rLZ_fDoBiBi_HPrvboq0pNzLVM8tHcTOhh6NYOaWmjh_L8BtzDfCOQvrIygVQjc"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary-light text-deep-green text-xs px-3 py-1 rounded-full font-bold tracking-wider uppercase">Fiction</span>
+</div>
+</div>
+<h3 class="text-2xl font-display font-bold text-white mb-1 group-hover:text-primary-light transition-colors leading-tight">Beyond the Last Horizon</h3>
+<p class="text-lg italic text-slate-400 mb-6 font-display">by Sarah J. Collins</p>
+<button class="mt-auto flex items-center justify-between w-full py-3.5 px-5 rounded-lg border border-primary-light/40 text-primary-light group-hover:bg-primary-light group-hover:text-deep-green transition-all font-bold">
+                Learn More
+                <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="group flex flex-col">
+<div class="relative mb-6 aspect-[2/3] overflow-hidden rounded-lg book-shadow bg-surface-green">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Vintage style journal book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4yl6Ubx6LOAqvUtBUOmLfLzXqKkmoa4wCcKWs272fVH67na4Skb5h1KLMR5WCqLP1133giizxiQXDe_DkCpf4lW3kRfktoT8wCulaTVOtZOEX_otWfVwR4VoczbSzkMGGtsv3QCsw6GRLUUrTZYRcKoVSQ2H_YDsYI845YyaCRYOX0SZurIJ8NlMalBf82xlPHLo5DswGjJ-6iTpG9G1R2Pr_R-MtlvJjvhD2CENM8sYV_tfdFlajUMR_vNFsAEvbW-_4RF5ii4zt"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary-light text-deep-green text-xs px-3 py-1 rounded-full font-bold tracking-wider uppercase">Non-fiction</span>
+</div>
+</div>
+<h3 class="text-2xl font-display font-bold text-white mb-1 group-hover:text-primary-light transition-colors leading-tight">The Architecture of Silence</h3>
+<p class="text-lg italic text-slate-400 mb-6 font-display">by Linus Van Pelt</p>
+<button class="mt-auto flex items-center justify-between w-full py-3.5 px-5 rounded-lg border border-primary-light/40 text-primary-light group-hover:bg-primary-light group-hover:text-deep-green transition-all font-bold">
+                Learn More
+                <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="group flex flex-col">
+<div class="relative mb-6 aspect-[2/3] overflow-hidden rounded-lg book-shadow bg-surface-green">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern abstract poetry book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCngOyRd-mUNbcAijFsFFZYjkAFhEbY7Z436FLnnfaTkm4OM1Xmy8B7x4j9OtVHmWF9pGa1cr3hQP_dlqLxFJ8JWpWxmGzbxBZHxB5CSKAbWle9ZkEpAA6-Qsh6PIuCfOJyVMrwkjVXbfvRT5aDAqFwFHaXi4lgQfmOPApHNIseFH_LT-SnQutj4YWGtSUha1VpuYfFEfPAMKD4_mx6cbZ1oxOoKiYC-fG2zpSdI2X4I1LO-0zzCvmEBfD4Wc7AkAVne6L-o1eaKsMD"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary-light text-deep-green text-xs px-3 py-1 rounded-full font-bold tracking-wider uppercase">Poetry</span>
+</div>
+</div>
+<h3 class="text-2xl font-display font-bold text-white mb-1 group-hover:text-primary-light transition-colors leading-tight">Stanzas for a Lost City</h3>
+<p class="text-lg italic text-slate-400 mb-6 font-display">by Miriam El-Masry</p>
+<button class="mt-auto flex items-center justify-between w-full py-3.5 px-5 rounded-lg border border-primary-light/40 text-primary-light group-hover:bg-primary-light group-hover:text-deep-green transition-all font-bold">
+                Learn More
+                <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="group flex flex-col">
+<div class="relative mb-6 aspect-[2/3] overflow-hidden rounded-lg book-shadow bg-surface-green">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Mystery novel with shadows and light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz8jl94rR5F-CgklPFtcyYBNEXTFGQk-OzKuy6RFtUCGv1IZOLgl_qHX6_rZ7aXB8VD2Bu8yjoFQ9yAKFXUgZ6WIeJTKl_-up0oJH_jJPJkIuIkj05_VMW7a2HlELzVhleH3682xC26dshpmL1dLY2ZcNQtMI_GlnMG3Fh6Wc-gFfT1fMvLFYo2oKtfXQVA113FM3HFPDiya0Fwu6W6NEJ6HgtfBh_axJ9o0a_JElM5sQlMruwye3Z6zzNRTSuLob3oiJ9lFndVprq"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary-light text-deep-green text-xs px-3 py-1 rounded-full font-bold tracking-wider uppercase">Fiction</span>
+</div>
+</div>
+<h3 class="text-2xl font-display font-bold text-white mb-1 group-hover:text-primary-light transition-colors leading-tight">Midnight at the Library</h3>
+<p class="text-lg italic text-slate-400 mb-6 font-display">by Robert Sterling</p>
+<button class="mt-auto flex items-center justify-between w-full py-3.5 px-5 rounded-lg border border-primary-light/40 text-primary-light group-hover:bg-primary-light group-hover:text-deep-green transition-all font-bold">
+                Learn More
+                <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="group flex flex-col">
+<div class="relative mb-6 aspect-[2/3] overflow-hidden rounded-lg book-shadow bg-surface-green">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Minimalist philosophy book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy43vUzb1cRbaMuNC0Ce8hpNsHXH4iPy_O_YlFrGJeBug4tN88vIPdjTLNHKRlz8Nmud9RPkNigSgmdy8kln_5B1yHjODv_FcD4Wdj7p25d9ZhKHHudHY_UqLQvpMqJmNQLYkjyV1_TESwCgtX0Ye1CZZxKuQ_Rc_nxCQULgN2fhe4dhHZBfRciWGUA4RC1q14lUD-hlW_YpneXq5Axy0aaw8J1wrh2TjaBgwwqKvTW8AzbqRRJ8G45WuYghh7vMZp6tTPnhGc6TPI"/>
+<div class="absolute top-4 right-4">
+<span class="bg-primary-light text-deep-green text-xs px-3 py-1 rounded-full font-bold tracking-wider uppercase">Non-fiction</span>
+</div>
+</div>
+<h3 class="text-2xl font-display font-bold text-white mb-1 group-hover:text-primary-light transition-colors leading-tight">The Mind's Compass</h3>
+<p class="text-lg italic text-slate-400 mb-6 font-display">by Sophia Reed</p>
+<button class="mt-auto flex items-center justify-between w-full py-3.5 px-5 rounded-lg border border-primary-light/40 text-primary-light group-hover:bg-primary-light group-hover:text-deep-green transition-all font-bold">
+                Learn More
+                <span class="material-icons text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="mt-24 flex items-center justify-center gap-4">
+<button class="w-12 h-12 flex items-center justify-center rounded-lg border border-white/10 text-slate-600 cursor-not-allowed">
+<span class="material-icons">chevron_left</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-lg bg-primary-light text-deep-green font-bold">1</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-lg hover:bg-white/5 border border-white/10 text-white font-medium transition-colors">2</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-lg hover:bg-white/5 border border-white/10 text-white font-medium transition-colors">3</button>
+<span class="text-slate-600">...</span>
+<button class="w-12 h-12 flex items-center justify-center rounded-lg hover:bg-white/5 border border-white/10 text-white font-medium transition-colors">12</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-lg border border-primary-light text-primary-light hover:bg-primary-light hover:text-deep-green transition-colors">
+<span class="material-icons">chevron_right</span>
+</button>
+</div>
+</main>
+<footer class="bg-surface-green border-t border-primary-light/10 pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-primary-light rounded flex items-center justify-center text-deep-green">
+<span class="material-icons text-sm">auto_stories</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-white">Griom<span class="text-primary-light">.</span></span>
+</div>
+<p class="text-slate-400 font-display leading-relaxed">
+                Representing bold voices and transformative stories since 2008. We believe in the power of the written word to change perspectives.
+            </p>
+</div>
+<div>
+<h4 class="font-bold text-white mb-6 uppercase text-sm tracking-widest">Resources</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-primary-light transition-colors" href="contact.html">Writer Guidelines</a></li>
+<li><a class="hover:text-primary-light transition-colors" href="authors.html">Agent Directory</a></li>
+<li><a class="hover:text-primary-light transition-colors" href="licensing.html">Rights &amp; Permissions</a></li>
+<li><a class="hover:text-primary-light transition-colors" href="news.html">Press Room</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-white mb-6 uppercase text-sm tracking-widest">Company</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-primary-light transition-colors" href="about.html">Our Mission</a></li>
+<li><a class="hover:text-primary-light transition-colors" href="contact.html">Contact</a></li>
+<li><a class="hover:text-primary-light transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary-light transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-white mb-6 uppercase text-sm tracking-widest">Newsletter</h4>
+<p class="text-slate-400 mb-4 text-sm">Stay updated with our latest releases and literary news.</p>
+<form class="flex">
+<input class="bg-deep-green border-primary-light/20 rounded-l-lg w-full px-4 py-2 focus:ring-primary-light focus:border-primary-light outline-none text-white" placeholder="Email address" type="email"/>
+<button class="bg-primary-light text-deep-green px-4 py-2 rounded-r-lg hover:bg-accent-green transition-all">
+<span class="material-icons">send</span>
+</button>
+</form>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 text-sm">© 2024 Griom Literary Entertainment. All rights reserved.</p>
+<div class="flex gap-6 text-slate-500">
+<a class="hover:text-primary-light transition-colors" href="#">Instagram</a>
+<a class="hover:text-primary-light transition-colors" href="#">Twitter</a>
+<a class="hover:text-primary-light transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+
+</body></html>

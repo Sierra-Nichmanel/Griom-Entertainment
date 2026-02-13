@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Featured Literary &amp; Media Works | Griom Literary Entertainment</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#063A0B", // Deep dark green from logo
+              secondary: "#98FB98", // Light green for buttons/accents
+              "bg-deep": "#041C06", // Deepest dark green for background
+              "bg-surface": "#082F0F", // Slightly lighter green for cards
+            },
+            fontFamily: {
+              display: ["DM Serif Display", "serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+            },
+          },
+        },
+      };
+    </script>
+<style type="text/tailwindcss">
+        .book-hover:hover .synopsis-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-bg-deep text-white font-sans transition-colors duration-300">
+<nav class="sticky top-0 z-50 bg-bg-deep/90 backdrop-blur-md border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a href="index.html" class="flex-shrink-0 flex items-center">
+<img alt="Griom Logo" class="h-12 w-auto object-contain" src="images/logo-dark.jpg"/>
+</a>
+<div class="hidden md:flex items-center space-x-8">
+            <a
+              class="text-sm font-semibold hover:text-secondary transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-secondary transition-colors"
+              href="services.html"
+              >Services</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-secondary transition-colors"
+              href="about.html"
+              >About</a
+            >
+            <div class="relative group">
+              <button
+                class="text-sm font-semibold hover:text-secondary transition-colors flex items-center gap-1"
+              >
+                Portfolio
+                <span class="material-symbols-outlined text-sm">expand_more</span>
+              </button>
+              <div
+                class="absolute top-full left-0 mt-2 w-56 bg-bg-deep border border-white/10 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden"
+              >
+                <div class="py-2">
+                  <a
+                    href="portfolio.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-secondary"
+                    >Featured Works</a
+                  >
+                  <a
+                    href="authors.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-secondary"
+                    >Authors</a
+                  >
+                  <a
+                    href="author-profile.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-secondary"
+                    >Author Profile</a
+                  >
+                  <a
+                    href="books.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-secondary"
+                    >Books Catalog</a
+                  >
+                  <a
+                    href="events.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-secondary"
+                    >Events</a
+                  >
+                  <a
+                    href="licensing.html"
+                    class="block px-4 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-secondary"
+                    >Licensing</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold hover:text-secondary transition-colors"
+              href="news.html"
+              >News</a
+            >
+            <a
+              class="bg-secondary text-bg-deep px-6 py-2.5 rounded-full font-bold text-sm hover:brightness-110 transition-all"
+              href="contact.html"
+              >Get in Touch</a
+            >
+          </div>
+<div class="md:hidden flex items-center">
+<button class="text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<header class="py-16 md:py-24 bg-bg-surface/30">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl">
+<h1 class="text-4xl md:text-6xl font-display text-white mb-6">Featured Literary &amp; Media Works</h1>
+<p class="text-lg md:text-xl text-emerald-100/70 leading-relaxed">
+                    Showcasing a curated collection of award-winning literature and cinematic adaptations managed by Griom. From debut novels to global media franchises.
+                </p>
+</div>
+</div>
+</header>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 mb-8">
+<div class="flex flex-wrap gap-4 border-b border-white/10 pb-4">
+<button class="px-6 py-2 text-sm font-bold bg-secondary text-bg-deep rounded-full transition-all">All Works</button>
+<button class="px-6 py-2 text-sm font-medium text-emerald-100/60 hover:text-secondary transition-colors">Fiction</button>
+<button class="px-6 py-2 text-sm font-medium text-emerald-100/60 hover:text-secondary transition-colors">Non-Fiction</button>
+<button class="px-6 py-2 text-sm font-medium text-emerald-100/60 hover:text-secondary transition-colors">Film &amp; TV Adaptations</button>
+<button class="px-6 py-2 text-sm font-medium text-emerald-100/60 hover:text-secondary transition-colors">Digital Media</button>
+</div>
+</div>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+<div class="group relative bg-bg-surface rounded-xl overflow-hidden shadow-2xl border border-white/5 transition-all hover:-translate-y-2 book-hover">
+<div class="aspect-[2/3] relative overflow-hidden bg-black">
+<img alt="Book Cover: The Silent Horizon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFHruHmDebq_XbxHuuzNqv90qGjYTCW-35_5Ezxv9f2ZJOHqkG63lG3YEsZo3unzkrJ50OieEzAu1WfWzt47xdNKKnnORgpzJyBuPNDyA1JE_3q6FyPAHtzoO4daaDyb9V_MxS1KqJdqPONpCKK1wbqEcRK03wIRHaRoiDgObUp9Z2qzZDlWaBEYGfNg2REWKM2Iffc06ddYo52zRrDB3lYgbkWPx3WNWOae3YDSfbd1fl6L0bMsBGtBOlDP1QYJI_fDZ6iJmHtjZy"/>
+<div class="synopsis-overlay absolute inset-0 bg-primary/95 p-6 flex flex-col justify-end opacity-0 transform translate-y-8 transition-all duration-500 text-white">
+<h4 class="font-display text-2xl mb-2 text-secondary">Synopsis</h4>
+<p class="text-sm leading-relaxed mb-6 text-emerald-50">A sweeping historical epic following a forgotten dynasty's rise and fall across three generations of conflict and betrayal.</p>
+<div class="flex items-center text-xs font-bold tracking-widest uppercase text-secondary">
+<span class="material-symbols-outlined text-base mr-2">verified</span>
+                            Role: Literary Agent
+                        </div>
+</div>
+</div>
+<div class="p-6">
+<span class="text-[10px] font-black text-secondary tracking-[0.2em] uppercase mb-2 block">Fiction / Drama</span>
+<h3 class="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">The Silent Horizon</h3>
+<p class="text-emerald-100/50 text-sm italic">by Eleanor Thorne</p>
+</div>
+</div>
+<div class="group relative bg-bg-surface rounded-xl overflow-hidden shadow-2xl border border-white/5 transition-all hover:-translate-y-2 book-hover">
+<div class="aspect-[2/3] relative overflow-hidden bg-black">
+<img alt="Book Cover: Digital Echoes" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA5guhxRMRwgz5K_OEL6tI8iQYwvzdS6bOCMCKqUfj8VyPTcUj_hne7fop3yomcyLAW0kFP9_HNYXAYheyHh12Huq6AiYCqMWSb8fSCTSw4FoNE0Ab5in6ZHFj9J91CxMSGt5VFv29bKu6rhp9wFlDhxhctMIqBgL0IfDVGowwkf4UrF-ZbwnqZDLzVTu38AakfULivm2W41kLe4vnocG6EpIdkPNUFFGkIo8auYQBsQxtxgAQbeEY4of1WWTcpxd8vVmdKYrJFUjN"/>
+<div class="synopsis-overlay absolute inset-0 bg-primary/95 p-6 flex flex-col justify-end opacity-0 transform translate-y-8 transition-all duration-500 text-white">
+<h4 class="font-display text-2xl mb-2 text-secondary">Synopsis</h4>
+<p class="text-sm leading-relaxed mb-6 text-emerald-50">An investigative look into how algorithms are reshaping the fundamental structures of human social interaction.</p>
+<div class="flex items-center text-xs font-bold tracking-widest uppercase text-secondary">
+<span class="material-symbols-outlined text-base mr-2">verified</span>
+                            Role: Publisher
+                        </div>
+</div>
+</div>
+<div class="p-6">
+<span class="text-[10px] font-black text-secondary tracking-[0.2em] uppercase mb-2 block">Non-Fiction</span>
+<h3 class="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">Digital Echoes</h3>
+<p class="text-emerald-100/50 text-sm italic">by Dr. Marcus Chen</p>
+</div>
+</div>
+<div class="group relative bg-bg-surface rounded-xl overflow-hidden shadow-2xl border border-white/5 transition-all hover:-translate-y-2 book-hover">
+<div class="aspect-[2/3] relative overflow-hidden bg-black">
+<img alt="Movie Poster: Neon Nights" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhS2Rc3I8_4gkD7mRYemK--iY12wRf2aiBKLBdWzgj5yRuhU-i1maGJXt1rwN-8COiFyid8ja6exA7u5t8eVN4YXFqZWwTM6w2Jx06JclsUzE2iOUKhQYPvIODr-o7SNEsmBL6zB6Eo06-oYxHS5X1U-TOINbaLpiOyYv-Xj3T-SwXhPUARHlub_QPoWnHlCr36BM2sPLoDjB95D_o88FS9nU5L1-kY-vPDk6WVcN7ogy8fufqvsxVj_zAD06nep2X3QKd4wNMVkHx"/>
+<div class="synopsis-overlay absolute inset-0 bg-primary/95 p-6 flex flex-col justify-end opacity-0 transform translate-y-8 transition-all duration-500 text-white">
+<h4 class="font-display text-2xl mb-2 text-secondary">Synopsis</h4>
+<p class="text-sm leading-relaxed mb-6 text-emerald-50">Now a Major Motion Picture. A cyberpunk thriller where memories can be traded like currency on the black market.</p>
+<div class="flex items-center text-xs font-bold tracking-widest uppercase text-secondary">
+<span class="material-symbols-outlined text-base mr-2">movie</span>
+                            Role: Media Rights Agent
+                        </div>
+</div>
+</div>
+<div class="p-6">
+<span class="text-[10px] font-black text-secondary tracking-[0.2em] uppercase mb-2 block">Film Adaptation</span>
+<h3 class="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">Neon Nights</h3>
+<p class="text-emerald-100/50 text-sm italic">Original Novel by Sarah J. Mills</p>
+</div>
+</div>
+<div class="group relative bg-bg-surface rounded-xl overflow-hidden shadow-2xl border border-white/5 transition-all hover:-translate-y-2 book-hover">
+<div class="aspect-[2/3] relative overflow-hidden bg-black">
+<img alt="Book Cover: The Last Gardener" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSqNd_7kjUSjqviWx2KTGm1EEuXFWCYYjaN2GefHxNgOymrY9J3W33SqSBhkD8ha_H5Xt9kFTr6amhgwntZUARf_cz3q5WvRUURi4BYaKk4ikCEWUOEBRD6NIgv6_rsOBJ_TWlkmK-0jQy5Niq6mAG6zbd9b5RVZDcmfJLRd1YP64Hh80DdXHKzn5q7Q00KhoHJCkF8pVex2iAz1sDBKyzonTPo08KPVgmHrjVoRnRU3NhNq5FB1WhMORJaMoXDrqh7iKWtXfPkV1N"/>
+<div class="synopsis-overlay absolute inset-0 bg-primary/95 p-6 flex flex-col justify-end opacity-0 transform translate-y-8 transition-all duration-500 text-white">
+<h4 class="font-display text-2xl mb-2 text-secondary">Synopsis</h4>
+<p class="text-sm leading-relaxed mb-6 text-emerald-50">A lyrical exploration of nature and loss, set against the backdrop of a rapidly changing climate in the Scottish Highlands.</p>
+<div class="flex items-center text-xs font-bold tracking-widest uppercase text-secondary">
+<span class="material-symbols-outlined text-base mr-2">verified</span>
+                            Role: Literary Agent
+                        </div>
+</div>
+</div>
+<div class="p-6">
+<span class="text-[10px] font-black text-secondary tracking-[0.2em] uppercase mb-2 block">Contemporary Fiction</span>
+<h3 class="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">The Last Gardener</h3>
+<p class="text-emerald-100/50 text-sm italic">by Alistair Graham</p>
+</div>
+</div>
+<div class="group relative bg-bg-surface rounded-xl overflow-hidden shadow-2xl border border-white/5 transition-all hover:-translate-y-2 book-hover">
+<div class="aspect-[2/3] relative overflow-hidden bg-black">
+<img alt="Book Cover: Midnight Tea" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGglaxvIYwwRRbM4ZvJn01xxn1D91fnpFsHsONxiyL7b0C2RQpHxhcENjcPWXGIRosuRTnKRkmiEP0-DWhnOx-fqGZ2aU9WRYu2RjDcXsLCCf5s9RX3BPZj1q-OOJmbiSApmKzo5sABJcpCplhivL9Xxewl4SRMqZM4e3M_Xa5xaq-SH1EtPpEfYsv9HnOb3GBdKTlT8LtvmVY0ux_gsvHZSrZkXh3twDRsw08NXG53681x1HOaBrPTQeiLyUq9PKH5roncDX438T4"/>
+<div class="synopsis-overlay absolute inset-0 bg-primary/95 p-6 flex flex-col justify-end opacity-0 transform translate-y-8 transition-all duration-500 text-white">
+<h4 class="font-display text-2xl mb-2 text-secondary">Synopsis</h4>
+<p class="text-sm leading-relaxed mb-6 text-emerald-50">A cozy mystery series that has captured the hearts of millions, soon to be a limited series on a major streaming platform.</p>
+<div class="flex items-center text-xs font-bold tracking-widest uppercase text-secondary">
+<span class="material-symbols-outlined text-base mr-2">verified</span>
+                            Role: Agency Representative
+                        </div>
+</div>
+</div>
+<div class="p-6">
+<span class="text-[10px] font-black text-secondary tracking-[0.2em] uppercase mb-2 block">Mystery</span>
+<h3 class="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">Midnight Tea</h3>
+<p class="text-emerald-100/50 text-sm italic">by Katherine Pierce</p>
+</div>
+</div>
+<div class="group relative bg-bg-surface rounded-xl overflow-hidden shadow-2xl border border-white/5 transition-all hover:-translate-y-2 book-hover">
+<div class="aspect-[2/3] relative overflow-hidden bg-black">
+<img alt="Book Cover: Architectural Ghosts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALDl87cbuefeUWyoDzQstGgWl9T-Dl5M6S2h61v_QeaoT_nBpgoB_ETMxHwBKYLGC5cHyGibIOEDADYGwFLqvk2HIJAB-lVEChaAMMS-HGfZB6Sd0DeBpFSQWXHyUMkNOCMSANAr_XBmugf1XGNBA--uDbx_wydSvG8J-Q-p-phStrgY1nniWgqdpAjE76oHRuITKqSSg-L8p5qSNuS_cip56C5fY78YQ55ptGr4HX4xY3YuSa0-KYe4W7W18bzmETkwJhH5I1zOek"/>
+<div class="synopsis-overlay absolute inset-0 bg-primary/95 p-6 flex flex-col justify-end opacity-0 transform translate-y-8 transition-all duration-500 text-white">
+<h4 class="font-display text-2xl mb-2 text-secondary">Synopsis</h4>
+<p class="text-sm leading-relaxed mb-6 text-emerald-50">A visual and narrative journey through abandoned modernist landmarks and the ideologies that built them.</p>
+<div class="flex items-center text-xs font-bold tracking-widest uppercase text-secondary">
+<span class="material-symbols-outlined text-base mr-2">verified</span>
+                            Role: Global Publisher
+                        </div>
+</div>
+</div>
+<div class="p-6">
+<span class="text-[10px] font-black text-secondary tracking-[0.2em] uppercase mb-2 block">Art &amp; Design</span>
+<h3 class="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">Architectural Ghosts</h3>
+<p class="text-emerald-100/50 text-sm italic">by Simon Vance</p>
+</div>
+</div>
+<div class="group relative bg-bg-surface rounded-xl overflow-hidden shadow-2xl border border-white/5 transition-all hover:-translate-y-2 book-hover">
+<div class="aspect-[2/3] relative overflow-hidden bg-black">
+<img alt="Book Cover: Strategic Voids" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO0_VyC3YldXuCNQQAAD3NHkZe8BvZJ5GmmEVt58CwZb-RxWyE60CvtpzhfjNkr2MH3rYVgvL-plcvydjzzrzgvJvVEHUJrHQ7Mjtt1q4GXCxe1OUwPZHg4kalIZrb-EzoIZQJcTEoPbrVQmvrjQQ5IZidSUZ3DytsCsa5qd-tGURye21bL4E0uTMwicMDdptLB1WYXqB265z3nZtn_4nKkYpwgYzvMJEIYgCElwyDISPoUmZ8i6fEpSYWlPUuiB6auyVaxz0VwHUB"/>
+<div class="synopsis-overlay absolute inset-0 bg-primary/95 p-6 flex flex-col justify-end opacity-0 transform translate-y-8 transition-all duration-500 text-white">
+<h4 class="font-display text-2xl mb-2 text-secondary">Synopsis</h4>
+<p class="text-sm leading-relaxed mb-6 text-emerald-50">A modern interpretation of classic strategy applied to the high-stakes world of 21st-century venture capital.</p>
+<div class="flex items-center text-xs font-bold tracking-widest uppercase text-secondary">
+<span class="material-symbols-outlined text-base mr-2">verified</span>
+                            Role: Literary Agent
+                        </div>
+</div>
+</div>
+<div class="p-6">
+<span class="text-[10px] font-black text-secondary tracking-[0.2em] uppercase mb-2 block">Business</span>
+<h3 class="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">Strategic Voids</h3>
+<p class="text-emerald-100/50 text-sm italic">by Robert Sterling</p>
+</div>
+</div>
+<div class="group relative bg-bg-surface rounded-xl overflow-hidden shadow-2xl border border-white/5 transition-all hover:-translate-y-2 book-hover">
+<div class="aspect-[2/3] relative overflow-hidden bg-black">
+<img alt="Series Poster: Obsidian Skies" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpiy-DUJ20HNxAQOWVz0r9jL6OoiErUJe5DblZgzRqR-73mWnBsIgJymj2p4TSgQDA6LkZJvKihq0slL5U5rOM2Td-FwY8TLiE6N8fJd0Uo4vGiZ5PoJnygCqKPyZIXfdtlZUkZB9_gT2PKefRLvgkdXlMNgQKS2ytQ3f-jVTpTiwYTWbD5UzMDAf_8gvlZWFbG1Wf77TQptLwg9vPcKOdXD9rHjBsotI1km9ks_8ioto9G7WH-XU3TaNn00C1J8xPgzel-vUzJKvp"/>
+<div class="synopsis-overlay absolute inset-0 bg-primary/95 p-6 flex flex-col justify-end opacity-0 transform translate-y-8 transition-all duration-500 text-white">
+<h4 class="font-display text-2xl mb-2 text-secondary">Synopsis</h4>
+<p class="text-sm leading-relaxed mb-6 text-emerald-50">A high-fantasy epic spanning multiple kingdoms. Griom negotiated the multi-platform rights for this global phenomenon.</p>
+<div class="flex items-center text-xs font-bold tracking-widest uppercase text-secondary">
+<span class="material-symbols-outlined text-base mr-2">tv</span>
+                            Role: Media Franchise Manager
+                        </div>
+</div>
+</div>
+<div class="p-6">
+<span class="text-[10px] font-black text-secondary tracking-[0.2em] uppercase mb-2 block">Fantasy / TV</span>
+<h3 class="text-xl font-bold mb-1 group-hover:text-secondary transition-colors">Obsidian Skies</h3>
+<p class="text-emerald-100/50 text-sm italic">by V.K. Thorne</p>
+</div>
+</div>
+</div>
+<div class="mt-20 flex justify-center items-center space-x-4">
+<button class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 text-emerald-100/60 hover:border-secondary hover:text-secondary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary text-bg-deep font-black shadow-lg shadow-secondary/20">1</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 text-emerald-100/60 hover:border-secondary hover:text-secondary transition-all">2</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 text-emerald-100/60 hover:border-secondary hover:text-secondary transition-all">3</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full border border-white/10 text-emerald-100/60 hover:border-secondary hover:text-secondary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+<footer class="bg-primary text-white py-20 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
+<div class="col-span-1 md:col-span-1">
+<img alt="Griom Logo White" class="h-10 w-auto mb-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYwj5pLnrttDd1BqUlZtbtfHdQPFaTYwlpEMTS5CB2BgRzEYaa9dG6xFhSZSFyi1SdLDCzq-EneHBHmiRl6K267vBrqd-6RjBFoL3xDyXoTwmM7sutbqfAR4YBsf5wo46zaCDzpE69vaIl7eVcQk-6mwtfIeAWr0DVt0cnjIt7v_vJsH1ucNNQMWPWFwURHESgJstoDqWPgW8TjHaECrMBAOtn6wFy46KEv9mjR1QlJ4yLTvtnYPqSQUbqFvcqRM56ygkA9I5bSugb"/>
+<p class="text-sm text-emerald-100/60 leading-relaxed max-w-xs">
+                        Redefining the relationship between storytellers and global audiences. We represent the voices of tomorrow with passion and precision.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold text-secondary mb-8 tracking-widest uppercase text-xs">Agency</h4>
+<ul class="space-y-4 text-sm text-emerald-100/60">
+<li><a class="hover:text-white transition-colors" href="authors.html">Our Authors</a></li>
+<li><a class="hover:text-white transition-colors" href="contact.html">Submission Guidelines</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Success Stories</a></li>
+<li><a class="hover:text-white transition-colors" href="books.html">Rights Catalog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-secondary mb-8 tracking-widest uppercase text-xs">Legal</h4>
+<ul class="space-y-4 text-sm text-emerald-100/60">
+<li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cookie Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-secondary mb-8 tracking-widest uppercase text-xs">Connect</h4>
+<div class="flex space-x-5 mb-8">
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-all group" href="#">
+<img alt="Twitter" class="w-5 h-5 invert group-hover:invert-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_KieOT8lC2hAW7mhwJ2qQx13VGy40FwNuVs-oljHTef5VkX10YVTs2OxB92Pr9Pw3QOxu89J8UllhcJ6PqNSZvzJfitVuVANXXiTmkU9bygeSN3S9JWfACALFcqZOGPZMrmb7_RpbGoHtqGNuaetZw8NsdJFfTxZKU9eTOVDE5x2qNXEVWfOicoW21L_ihXTnPzpb6liKabZizCzBLC_uT4oJ_Yjg12O4wqs64QGUkJD63RBM41j9f0DWt4wqNf9knL0opFB9A_y5"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-all group" href="#">
+<img alt="LinkedIn" class="w-5 h-5 invert group-hover:invert-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMEVhaXpnt8rt69guBs0IIu2eYJxtSvCkfZWNB8OjNVE_EuTdwSMduQ8_GEq5LyH4LjIyUL9u4caedv6Pyr850PP7_5FACBzu0MRBdUW2Iz3FVIw8mIpAjo1YXknHJV6mvFB_L_KZbo6aCd4kxxd0rnFUdnMQJYEiFi_LYT9XKyJEDn9pk3sFyoRf2Ryk3PGMB2mEjmBQxNflSWoDwcIKoCq4ESn3O6P5LI5tjAf1uudDXJyK2mEIcSURM9Ee3HVyXRxmIIAjNJZJK"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-secondary transition-all group" href="#">
+<img alt="Instagram" class="w-5 h-5 invert group-hover:invert-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUVu-ukpo4jaaSwV4PuDIoBnJq3hrybNY3szwcc6uHt3CzVou23XHvyj-olqEvdfMc6tZnwIZGnLULDfQYF74swFnE4bj_XETfywUiDfZli1B1HzGE90fMnsIK9ysSHUyaW3jUAspxyu-TnuMHiym68LNOnz0NjOXNyUFOZsHnOz38GKUO8eQB4gtqVid6kJXvrk_sh2b5lmRkjTollwyL1edHX2De9QJVT_t42A_2KPAz73N6BE1REYhgclXlCMuQ5MgiWT5VtcIK"/>
+</a>
+</div>
+<p class="text-xs text-emerald-100/40 italic">
+                        Subscribe to our newsletter for industry insights and agency updates.
+                    </p>
+</div>
+</div>
+<div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-emerald-100/40">
+<p>© 2024 Griom Literary Entertainment. All rights reserved.</p>
+<p class="mt-4 md:mt-0 uppercase tracking-widest font-semibold">Crafting legacies, one story at a time.</p>
+</div>
+</div>
+</footer>
+
+</body></html>

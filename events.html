@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Media &amp; Events | Griom Literary Entertainment</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#12a141",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112116",
+                        "surface-dark": "#1a2e20",
+                        "accent-dark": "#0d1a11",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Spline Sans', sans-serif;
+        }
+        .masonry {
+            column-count: 2;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 1024px) {
+            .masonry {
+                column-count: 3;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #112116;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #12a141;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-2">
+<img src="images/logo-dark.jpg" alt="Griom Logo" class="h-10 w-auto object-contain">
+</a>
+<div class="hidden md:flex items-center space-x-8">
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="services.html"
+              >Services</a
+            >
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="about.html"
+              >About</a
+            >
+            <div class="relative group">
+              <button
+                class="text-sm font-semibold hover:text-primary transition-colors flex items-center gap-1"
+              >
+                Portfolio
+                <span class="material-symbols-outlined text-sm">expand_more</span>
+              </button>
+              <div
+                class="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-background-dark border border-gray-100 dark:border-white/10 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden"
+              >
+                <div class="py-2">
+                  <a
+                    href="portfolio.html"
+                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/5 hover:text-primary"
+                    >Featured Works</a
+                  >
+                  <a
+                    href="authors.html"
+                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/5 hover:text-primary"
+                    >Authors</a
+                  >
+                  <a
+                    href="author-profile.html"
+                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/5 hover:text-primary"
+                    >Author Profile</a
+                  >
+                  <a
+                    href="books.html"
+                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/5 hover:text-primary"
+                    >Books Catalog</a
+                  >
+                  <a
+                    href="events.html"
+                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/5 hover:text-primary"
+                    >Events</a
+                  >
+                  <a
+                    href="licensing.html"
+                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-white/5 hover:text-primary"
+                    >Licensing</a
+                  >
+                </div>
+              </div>
+            </div>
+            <a
+              class="text-sm font-semibold hover:text-primary transition-colors"
+              href="news.html"
+              >News</a
+            >
+            <a
+              class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all"
+              href="contact.html"
+              >Get in Touch</a
+            >
+          </div>
+<button class="bg-primary text-white px-6 py-2.5 rounded-full font-medium hover:bg-opacity-90 transition-all">
+                Contact Us
+            </button>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 py-8">
+<!-- Featured Event Hero -->
+<section class="relative rounded-xl overflow-hidden mb-16 h-[500px] flex items-end">
+<img alt="Next Major Event" class="absolute inset-0 w-full h-full object-cover" data-alt="Dramatic stage lighting with audience silhouettes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsHF2BaFUR3ECUqS3Retjw2yIqPx0ULghmFm5xj9kmdqG1DSaFovyMpXcCkYAZsFHcd2OvCY1phloPH4nxjTkjH3khjq_HpphipURUO0Tn_s_Q1JAzBkTtb1VOvozfS-n8kG_85JKagUHffC5oJUTGZcEzpuKXEAJUrKmAUy2qQ67DdJF9FHDpzllTCUA_dPpvHXzy4x3Sei2IyUIjAjg1-1z4JIaXy-4x8w_dXNmxkfWv6ashnsppEVkwbd5PeQwBR3f2LruY64pG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
+<div class="relative z-10 p-8 md:p-12 w-full flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="max-w-2xl">
+<span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">Featured Next Week</span>
+<h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">The Midnight <br/>Poetry Slam Finals</h1>
+<div class="flex flex-wrap gap-6 text-slate-300">
+<div class="flex items-center gap-2">
+<span class="material-icons text-primary text-sm">calendar_today</span>
+<span>October 24, 2024</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons text-primary text-sm">location_on</span>
+<span>The Grand Atrium, NYC</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons text-primary text-sm">schedule</span>
+<span>08:00 PM EST</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex gap-4">
+<div class="bg-white/10 backdrop-blur-md rounded-lg p-3 text-center min-w-[70px]">
+<div class="text-2xl font-bold">06</div>
+<div class="text-[10px] uppercase text-primary font-bold">Days</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-lg p-3 text-center min-w-[70px]">
+<div class="text-2xl font-bold">14</div>
+<div class="text-[10px] uppercase text-primary font-bold">Hrs</div>
+</div>
+<div class="bg-white/10 backdrop-blur-md rounded-lg p-3 text-center min-w-[70px]">
+<div class="text-2xl font-bold">52</div>
+<div class="text-[10px] uppercase text-primary font-bold">Min</div>
+</div>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-lg transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/20">
+                        GET YOUR TICKETS <span class="material-icons">confirmation_number</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filters and View Toggle -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+<div class="flex flex-wrap gap-3">
+<button class="px-5 py-2 bg-primary text-white rounded-full text-sm font-medium">All Events</button>
+<button class="px-5 py-2 bg-surface-dark text-slate-400 hover:text-white rounded-full text-sm font-medium border border-primary/10 transition-colors">Poetry Slams</button>
+<button class="px-5 py-2 bg-surface-dark text-slate-400 hover:text-white rounded-full text-sm font-medium border border-primary/10 transition-colors">Book Launches</button>
+<button class="px-5 py-2 bg-surface-dark text-slate-400 hover:text-white rounded-full text-sm font-medium border border-primary/10 transition-colors">Workshops</button>
+</div>
+<div class="bg-surface-dark p-1 rounded-lg flex border border-primary/10">
+<button class="flex items-center gap-2 px-4 py-1.5 bg-primary text-white rounded-md text-sm font-medium">
+<span class="material-icons text-sm">grid_view</span> List
+                </button>
+<button class="flex items-center gap-2 px-4 py-1.5 text-slate-400 hover:text-white rounded-md text-sm font-medium">
+<span class="material-icons text-sm">calendar_month</span> Calendar
+                </button>
+</div>
+</div>
+<!-- Upcoming Events Grid -->
+<section class="mb-24">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-3xl font-bold flex items-center gap-3">
+                    Upcoming <span class="text-primary">Schedule</span>
+</h2>
+<a class="text-primary hover:underline text-sm font-medium flex items-center gap-1" href="#">
+                    Sync to Calendar <span class="material-icons text-sm">sync</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Event Card 1 -->
+<div class="group bg-surface-dark rounded-xl overflow-hidden border border-primary/5 hover:border-primary/40 transition-all">
+<div class="relative h-48">
+<img alt="Workshop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Creative writer working in a rustic studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9cLP--GmvVAivAedwga3AINewOPjcR4RbVmjmmnx2RX2g8UKbyXfxQUtpTyaiv4ky0t2jeMp7I_BoQmKkPPrGPDqt5B_Z9QYRllWUa7rF_HwRANHN7ByRA_GyHHQkRfZ3YkXke6OKxxemoVJA5IJ_2z8ETFxv9ZnVYrzhgAfbPeHwRvgjYXA2ecuNIBp-wuL5gwDgLUYJfWEUIp_CWurC5gy8ILeimxXxudTok7Ti70YMyJGMRiJD_DD2BZtVbZ7kguuMomQ-L3oa"/>
+<div class="absolute top-4 left-4 bg-background-dark/90 backdrop-blur-md rounded-lg p-2 text-center min-w-[50px]">
+<div class="text-lg font-bold">28</div>
+<div class="text-[10px] uppercase text-primary font-bold">OCT</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-primary text-xs font-bold uppercase mb-2">
+<span class="material-icons text-xs">edit</span> Workshop
+                        </div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Narrative Flow Workshop</h3>
+<p class="text-slate-400 text-sm mb-6 line-clamp-2">Master the art of pacing and structural storytelling with award-winning author Julianne Grey.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1 text-slate-300 text-sm">
+<span class="material-icons text-sm text-slate-500">location_on</span> Online
+                            </div>
+<button class="bg-primary/20 hover:bg-primary text-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">
+                                RSVP
+                            </button>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="group bg-surface-dark rounded-xl overflow-hidden border border-primary/5 hover:border-primary/40 transition-all">
+<div class="relative h-48">
+<img alt="Book Launch" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Suit-clad author signing books at a podium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA22nItTHzPqVw68r78cpvw-T3JqjMHr7S0mmarX9gnUTxeK2UgIP-D0gJ-rZ414Ql4FVrU4eweNXtc0eVb1J9VN-xzl9NdrGkDolVjx4p2WZZ-RkOiKqFTuVL4uTPEseroCNrR9DwaxaqLa5JbkkgdU-t-3AvcY-Rxh9e91mpRoOltuRwbmEAYNPCM5jld6osUPea6mp8foV4g4DhredwAHZIee017knPhtzgmrkL0zMlo4Ss-ziM5aHycC8dCcoCE3QliyDcZLObR"/>
+<div class="absolute top-4 left-4 bg-background-dark/90 backdrop-blur-md rounded-lg p-2 text-center min-w-[50px]">
+<div class="text-lg font-bold">02</div>
+<div class="text-[10px] uppercase text-primary font-bold">NOV</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-primary text-xs font-bold uppercase mb-2">
+<span class="material-icons text-xs">auto_stories</span> Book Launch
+                        </div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Echoes of the Valley</h3>
+<p class="text-slate-400 text-sm mb-6 line-clamp-2">The official launch and signing ceremony for Marcus Thorne's latest thriller novel.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1 text-slate-300 text-sm">
+<span class="material-icons text-sm text-slate-500">location_on</span> London Central
+                            </div>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/10">
+                                TICKETS
+                            </button>
+</div>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="group bg-surface-dark rounded-xl overflow-hidden border border-primary/5 hover:border-primary/40 transition-all">
+<div class="relative h-48">
+<img alt="Poetry Night" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="DJs and vibrant neon lights at a lounge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3LVmM-NgbeXhVnj9zcvpuHox6NJS7tfcVUXvb6tdvKNsaF_6jFsc4KBICpGfLIakpUrC6nvfRPvR-7WwKkSmznRoCPBAm9A58INQ7ImPX6OTHJsSYyBMFuCqCfSwBdB1yYf1a9cDNg1Tpbq7rjkcnCH2-Od88PR7_wJXufvN0lcKXOc-J2pcK1MlLVYgQXItSasfvQmoyEf__4HozG95PfkHvdVIlvvQ5Z-mSkcAVA4eWY7DoBTjeV4gc3x88PdfHbQR5zfarovuM"/>
+<div class="absolute top-4 left-4 bg-background-dark/90 backdrop-blur-md rounded-lg p-2 text-center min-w-[50px]">
+<div class="text-lg font-bold">15</div>
+<div class="text-[10px] uppercase text-primary font-bold">NOV</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-primary text-xs font-bold uppercase mb-2">
+<span class="material-icons text-xs">mic</span> Poetry Slam
+                        </div>
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">Urban Beats &amp; Rhymes</h3>
+<p class="text-slate-400 text-sm mb-6 line-clamp-2">A high-energy fusion of hip-hop and spoken word featuring the underground's finest.</p>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1 text-slate-300 text-sm">
+<span class="material-icons text-sm text-slate-500">location_on</span> Brooklyn Lounge
+                            </div>
+<button class="bg-primary/20 hover:bg-primary text-primary hover:text-white px-4 py-2 rounded-lg text-sm font-bold transition-all">
+                                RSVP
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-full font-bold transition-all">
+                    LOAD MORE EVENTS
+                </button>
+</div>
+</section>
+<!-- Past Highlights Gallery -->
+<section class="mb-24">
+<div class="mb-8">
+<h2 class="text-3xl font-bold mb-2">Relive the <span class="text-primary">Night</span></h2>
+<p class="text-slate-400">Captured moments from our previous literary and media showcases.</p>
+</div>
+<div class="masonry">
+<!-- Gallery Item 1 -->
+<div class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer">
+<img alt="Highlight 1" class="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Crowd cheering at a lively outdoor festival" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaeNDPGWr3OPpxgb_eSmDoB-hSUTttPqAOjFlIUpWTBdXJM1eSWJZzxOfEhj8yNubHyHWscdX3gTY0bKhVRuA6fGq-_I6oj6Wp0aHYQxJ7A-Zi-voIOjwOzuxA2elU_59KxhB799uRETCP81s6dOrpYI4UEt5ABHVoy1hukq8-iDc2qKBjhAgt9PhRU3b75WWJXXAoDPljyN2QmP5jT8wEUW9e2cZ3pBsMnRkDu6ZCktvPP0AOCNkB62EvHWU9G7mRnTvc5nnPw2I4"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-lg">
+<span class="material-icons">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-white text-sm font-bold">Summer Literary Festival '23</p>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer">
+<img alt="Highlight 2" class="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Microphone on a stand with bokeh lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw6T9KCn0dtU3XwKaTWt1EwqhlArGym0nocdCuwKY4cS8InGXzwQtjVI8GixmmTwy7VhYAS1Pb4iwA5KLNq22g8DO7z7xMsCekHirpEJH89ZP3WDfb86XSMesPLPQeW3M-IZJHaNUS8bYK_UYxvImdJsXMUMojUkbL7kVYpNP40YUbXJ-liw4wuS45RT8UJ4KrSs_fRto6X9kux8GzIlkNj4s_TMIjnBFDkJRTApkJM6oIFAD36naDbknCj8zev20aYlmOa-p8hOx6"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-lg">
+<span class="material-icons">visibility</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-white text-sm font-bold">Open Mic Series #12</p>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer">
+<img alt="Highlight 3" class="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Concert audience holding up phone lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ0YVPOlWsyFjSHIf9cP75uBNfo887R_2EwtDZ2hBBIM2PN0CNQLHWDmDkZFVRuCIc8LO7V0hyJj1KdPKQunkcOSfUy1Di3gMF3XPo7NgvryDZazHGpfV5l0HTT-RSEa608BQxSn1jXiaWgsUzMU1Y1sxrd40RNU2W1C1HistoRVaA3y_rHxBkjyiwbwu9vCqP5HM3zxZsDMBJHuptwUFBeNjR3Bd7Y3_fJEcfyH1ewI0nJ27BVLpCkoktF1rn9AB7iI6y84oR8tST"/>
+<div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent group-hover:from-primary/80 transition-all">
+<p class="text-white text-sm font-bold">The Great Slam '24</p>
+<p class="text-white/60 text-xs">124 Photos • 4 Videos</p>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer">
+<img alt="Highlight 4" class="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Professional camera filming a theater production" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Yl_aIlovYEMJGCax-dDIcNpTucyE0gV7fg8KW7Ui-CTpZN4HFS_uY17F6pVJeDfDEQb1-orKKFIKUD7O2fJT64dtc6IoBP5UX8fjoz3-l2f3Nrc3E7zNIM6M0g1dY1ctRIlHArtxGt1kypzmnBoqIpfrAi63yrmYGf1Q_LIOQq2coN1M4CXWOHPjGn9RSmL9wuFI8i-R9GDsqikUsMv8rGAv-DVoglXMLXF5jDtiFvGZIyCnEJwcZoUgFq53uHC7dHs4hjmftMcX"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-lg">
+<span class="material-icons">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Gallery Item 5 -->
+<div class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer">
+<img alt="Highlight 5" class="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="People laughing at a book signing table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABsh-66dhd-WmzZ5YFQ2Gonet6Ho80EtFZ1A1NOZccMuNGT8czPoVhjvLBoXTaYSUV7y1C0GXSPkMza38NIx5nMQ4cVVa-WfOGYRSz33LCQK3mVlvSojWZyPsg2YigP2JIz9wW2DpDuhZKtu1rJr0pkOziVX0Hh0TQI9upteU8B4yAoqHV2JiauNh8vjk3aG4lW0jb-LIgpEjwiNVvIa1Xqv8XlGUZt9TRHnnocjouV6ng4BjT3raDAfTKM58FONz6rKVCuebYdh4u"/>
+</div>
+<!-- Gallery Item 6 -->
+<div class="masonry-item group relative rounded-xl overflow-hidden cursor-pointer">
+<img alt="Highlight 6" class="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Close up of a typewriter in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMc5oRIVX7WBiA_9FzDu5MO1ie8vAxkzdzZCZ0wD7isFs47WoTgaktFKKFemRuYv8wMmttbPZhEkbtB5J50xvLnpvtlgGQgdHj01XrO0RvyuFuc3H8z3AmDgoQ0I43p1MaWap3IsAQ58Tj3wtgbFYDna84bS2WpdjhRZb3czH6u_o9FX1Gg8I5wrlNsQYJNM_cKT4FMBDHmV4wlyrOflL_SWJEh1JafG5n5LkbpegUyg9p_c6zjgVLHcomr7bw8u32oF3QHgcXruR-"/>
+</div>
+</div>
+</section>
+<!-- Newsletter Opt-in -->
+<section class="bg-surface-dark rounded-2xl p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="relative z-10 grid md:grid-cols-2 items-center gap-12">
+<div>
+<h2 class="text-4xl font-bold mb-4">Stay in the <span class="text-primary">Loop</span></h2>
+<p class="text-slate-400 text-lg">Never miss a literary drop or a high-energy slam. Get first access to ticket sales and VIP workshops.</p>
+</div>
+<div>
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 bg-background-dark border border-primary/20 rounded-lg px-6 py-4 focus:outline-none focus:ring-2 focus:ring-primary/50 text-white placeholder:text-slate-600" placeholder="Enter your email address" type="email"/>
+<button class="bg-primary text-white font-bold px-8 py-4 rounded-lg hover:shadow-lg hover:shadow-primary/30 transition-all whitespace-nowrap">
+                            SUBSCRIBE
+                        </button>
+</form>
+<p class="mt-4 text-xs text-slate-500">By subscribing, you agree to our Privacy Policy and consent to receive marketing emails.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="mt-24 border-t border-primary/10 py-16 bg-accent-dark">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+<span class="material-icons text-white text-sm">menu_book</span>
+</div>
+<span class="text-lg font-bold">GRIOM</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed">
+                        Redefining literary entertainment through immersive storytelling and dynamic live experiences.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary">Explore</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="events.html">Upcoming Events</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Past Highlights</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Media Gallery</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Live Streams</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary">Company</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="about.html">Our Story</a></li>
+<li><a class="hover:text-primary transition-colors" href="news.html">Press Kits</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Partner with Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-primary">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-lg bg-surface-dark border border-primary/10 flex items-center justify-center hover:bg-primary transition-all" href="#">
+<img alt="Instagram" class="w-5 h-5 invert" data-alt="Instagram logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaGhMU_PXZQBvLP5glEAJJ0_cPIDqVeuHJ8Pwfo1YD-08ejG0Enfqka_XF86-sDjTLuV_EG9gmol9vTmVGNMy37WodwXPsncVLKQdcqn4mXMDgbWxDH3vEofmdiW6jAzx4hQiy-g82J6FHxz5Pbmq04CLlUROTq7OTL0xIGtVTJqxJSPo32pvSmxjkA1evZYW3EZe2DSDlNh1yvjWtKfGzXKWniQl2BnBah0SYAu54wMsYeZhOjzBjMeVFCLo24Ya2vBc74_Jwp7_X"/>
+</a>
+<a class="w-10 h-10 rounded-lg bg-surface-dark border border-primary/10 flex items-center justify-center hover:bg-primary transition-all" href="#">
+<img alt="X" class="w-4 h-4 invert" data-alt="Twitter X logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACEfcgjRS4ay3kKfekQEaDcwFAQ9pyQur9TbKWvnq-zUDBSRMFjPPQtC6HsOODA0nvQ846rQkeSBpnIOLEU0g4prx777xMUiu3tJZl1tFj6WSTyumb9LOMfg06Wa6CMzxsCwmz08mw5cwuKN8OmSprgXCQ0RdgAfDk82u7uCrWA51cNFSTk_oWfOoWeuiOM7Mqhx3WljRfctGt1cwyBfLr6iV68R2uPsnwVq5H_DwZ8QYgQUgYLo8P2q2IxTw4K02cESw5Eh5Av3NM"/>
+</a>
+<a class="w-10 h-10 rounded-lg bg-surface-dark border border-primary/10 flex items-center justify-center hover:bg-primary transition-all" href="#">
+<img alt="YouTube" class="w-5 h-5" data-alt="YouTube logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7cWwRD2N6gEP0JjW9FNeLZLkINNMiIwinyiYRq6MGjLvg8bgpkQ73EGIgr4i13TqAaUpDkz0bYWx66IV2b5GX_9pj-NIZiUkzCxgyiLUdQ3JJyolpxvpTUKKigpMyDiMSbUPwedpNFnMCHV5p5lKNRPoYUlBX_pZZ8-OV4mPDSM2CcVvKnsK_EASA43dwKqGnI16L0g6fQw522dMzEcG5VWwe7TRpGcSAkQ8lESRNaCC3yvwVl94Q-lMzqSBy6RGdAYRSTFlT_9F1"/>
+</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-8 border-t border-primary/5">
+<p class="text-slate-500 text-xs">© 2024 Griom Literary Entertainment. All rights reserved.</p>
+<div class="flex gap-6 text-xs text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Cookie Settings</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Location Modal Stub (Representational) -->
+<div class="hidden">
+<div data-location="New York City"></div>
+<div data-location="London"></div>
+</div>
+</body></html>
